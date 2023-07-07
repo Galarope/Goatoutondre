@@ -10,47 +10,106 @@
 
     </header>
     <main>
-        <section>
-            <ul class="list-products">
-                <li>
+        <section class="basket">
+
+            <h2>Votre panier</h2>
+
+            <ul class="list">
+                <li class="list-item">
                     <div class="card product">
-                        <img src="/" />
+                        <img class="product-img" src="/" width="100px" height="100px"/>
                         <div class="description"></div>
                         <span>Prix</span>
                     </div>
                     <span>X</span>
                 </li>
-                 <li>
-                    <div class="card product">
-                        <img src="/" />
-                        <div class="description"></div>
-                        <span>Prix</span>
-                    </div>
-                    <span>X</span>
-                </li>
-                 <li>
-                    <div class="card product">
-                        <img src="/" />
-                        <div class="description"></div>
-                        <span>Prix</span>
-                    </div>
-                    <span>X</span>
-                </li>
+                
             </ul>
 
         </section>
-        <section>
-            <div>
 
-            </div>
-            <div>
+        <section class="form-field">
+            <form>
+                <div class="information">
+                    <h2>Vos Coordonnées</h2>
 
-            </div>
+                    <div class="input-group">
+                        <label for="client_name">
+                            Nom et Prénom:
+                            <input type="text" id="client_name" required/>
+                        </label>
+
+                        <label for="shipping_address">
+                            Adresse de Livraison:
+                            <input type="text" id="shipping_address" required/>
+                        </label>
+
+                        <label for="billing_address">
+                            Adresse de Facturation:
+                            <input type="text" id="billing_address" required/>
+                        </label>
+
+                        <label for="tel_number">
+                            Numéro de téléphone:
+                            <input type="text" id="tel_number" pattern="[0-9]{8,10}" required/>
+                        </label>
+
+                        <label for="email">
+                            Email:
+                            <input type="email" id="email" required/>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="payment">
+                    <h2>Paiement</h2>
+                    <div class="input-group">
+                        <div class="payment_cb">
+
+                            <label for="card_cb_number">
+                                Numéro de Carte:
+                                <input type="text" id="card_cb_number" pattern="[0-9]{13,16}" required/>
+                            </label>
+
+                            <div class="card_info">
+        
+                                <label for="expiry_month">
+                                    Mois d'expiration:
+                                    <input type="text" id="expiry_month" pattern="[0-9]{1, 2}" required/>
+                                </label>
+
+                                <label for="expiry_year">
+                                    Année d'expiration:
+                                    <input type="text" id="expiry_year" pattern="[0-9]{1, 2}" required/>
+                                </label>
+
+                                <label for="cvg">
+                                    CVG:
+                                    <input type="text" id="cvg" pattern="[0-9]{3}" required/>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="decoration">
+                            <span class="straight_line"></span>
+                            <span>OU</span>
+                            <span class="straight_line"></span>
+                        </div>
+
+                        <div class="payment_paypal">
+                            <h3>P</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">Valider</button>
+            </form>
         </section>
+
     </main>
     <footer>
 
     </footer>
-    
+    <script src="./script.js"></script>
 </body>
 </html>
