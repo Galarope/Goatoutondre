@@ -1,0 +1,15 @@
+* {
+    box-sizing: content-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-field, .basket {
+    width: 50%;
+}
+
