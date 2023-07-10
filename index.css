@@ -3,8 +3,8 @@
     src: url(Fonts/WOODYSSEY.ttf) format(truetype);
 }
 
-.container {
-    text-align:left;
+.flex {
+    flex-wrap: wrap;
 }
 
 p {
