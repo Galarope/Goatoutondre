@@ -1,0 +1,30 @@
+#PP{
+
+    border-radius: 20%;
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgb(132, 176, 226);
+  }
+
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+  }
+
+  #NomPrenom{
+    font-size: small;
+  }
+
+  
+  input
+{
+height: 30px;
+width: 100px;
+}

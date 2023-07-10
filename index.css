@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'woodyssey';
+    src: url(Fonts/WOODYSSEY.ttf) format(truetype);
+}
+
+.container {
+    text-align:left;
+}
+
+p {
+    font-family: 'woodyssey';
+    font-size: 200px;
+    color: rgb(48, 190, 48);
+}
+#videoaccueil {
+    display:block;width:1200px;margin:0 auto 35px auto}
