@@ -1,0 +1,94 @@
+.container {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.display, .btn-group {
+    width: 100%;
+    height: 70px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.display {
+    justify-content: space-between;
+}
+
+.display {
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-bottom: none;
+}
+
+.btn-group {
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-top: none;
+}
+
+/**/
+.scoreDisplay, .levelDisplay {
+    width: 12%;
+    display: flex;
+    margin: 0 15px;
+    align-items: end;
+}
+
+.scoreDisplay .score{
+    margin-left: 5px;
+}
+
+.levelDisplay .currentLevel {
+    margin-left: 5px;
+}
+
+
+.userMode, .botMode {
+    width: 15%;
+    cursor: pointer;
+}
+
+/**/
+.grid {
+    box-sizing: content-box;
+    width: 100%;
+    height: 500px;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    background-color: rgb(22, 207, 22);
+}
+
+.goat {
+    background-image: url("./assets/goat_2.png");
+    background-color: rgb(102, 53, 6);
+}
+
+.wolf {
+    background-image: url("./assets/loup.png");
+    background-color: rgb(102, 53, 6);
+}
+
+.rock {
+    /*background-color: rgb(138, 60, 60);*/
+    background-color: rgb(22, 207, 22);
+    background-image: url("./assets/rock.png");
+}
+
+.grass {
+    background-image: url("./assets/grass.png");
+}
+
+.newGrass {
+   background-image: url("./assets/newGrass.png");
+}
+
+
