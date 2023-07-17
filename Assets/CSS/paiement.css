@@ -13,6 +13,10 @@ h2 {
     padding: 10px;
 }
 
+li {
+    list-style: none;
+}
+
 input:focus {
     outline: none;
 }
@@ -40,6 +44,20 @@ input:focus {
 
 .basket .list {
     overflow: auto;
+}
+
+
+/**/
+.card .product h3, p {
+    margin: 5px 0;
+}
+
+.list .card {
+    display: flex;
+}
+
+.list .card .product {
+    width: 100%;
 }
 
 /**/

@@ -1,7 +1,29 @@
+@font-face {
+    font-family: 'Louisgc';
+    src: url(../Assets/Fonts/LouisGeorgeCafe.ttf) format(truetype);
+    /*../Fonts/LouisGeorgeCafe.ttf*/
+}
+
+@font-face {
+    font-family: 'Louisgcbold';
+    src: url(../Assets/Fonts/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'wild';
+    src: url(../Assets/Fonts/Wild\ Nature.ttf) format(truetype);
+}
+
+@font-face {
+    font-family:'nature';
+    src: url(../Assets/Fonts/Drawing\ Nature.ttf) format(truetype);
+}
+
+/**/
 .container {
     width: 500px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .display, .btn-group {
@@ -10,6 +32,7 @@
     border: 3px solid black;
     display: flex;
     justify-content: center;
+    font-family: 'wild';
 }
 
 .display {
@@ -26,6 +49,7 @@
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     border-top: none;
+    align-items: center;
 }
 
 /**/
@@ -36,18 +60,48 @@
     align-items: end;
 }
 
-.scoreDisplay .score{
+.scoreDisplay p, .levelDisplay p {
+    margin-bottom: 15px;
+}
+
+.scoreDisplay .score, .levelDisplay .currentLevel {
     margin-left: 5px;
 }
 
-.levelDisplay .currentLevel {
-    margin-left: 5px;
+.scoreDisplay {
+    margin-left: 20px;
 }
 
+.levelDisplay {
+    margin-right: 20px;
+}
 
 .userMode, .botMode {
-    width: 15%;
+    width: 20%;
     cursor: pointer;
+    font-family: "wild";
+    font-size: 18px;
+    background-color: rgb(205, 201, 201);
+    height: 40px;
+    border-radius: 10%;
+    transition: 0.4s;
+}
+
+.userMode:active {
+    outline: none;
+}
+
+.botMode:active {
+    outline: none;
+}
+
+.userMode:hover, .botMode:hover {
+    background-color: rgb(146, 144, 144);
+    font-size: 19px;
+}
+
+.userMode {
+    margin-right: 10px;
 }
 
 /**/
@@ -66,6 +120,8 @@
     text-align: center;
     background-color: rgb(22, 207, 22);
 }
+
+/**/
 
 .goat {
     background-image: url("./assets/goat_2.png");
