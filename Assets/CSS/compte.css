@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'woodyssey';
+  src: url(Fonts/WOODYSSEY.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'eacolo';
+  src: url(../Goatoutondre/Fonts/eacologica-round-slab-ffp.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'Louisgc';
+  src: url(../Fonts/LouisGeorgeCafe.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'wild';
+  src: url(../Fonts/Wild\ Nature.ttf) format(truetype);
+}
+
+#conteneur2 {
+
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height: 180px;
+  margin-left: 100px;
+  margin-right: 150px;
+  font-family: 'wild';
+  font-size: 100px;
+  color: rgb(116, 153, 109);
+  text-shadow: 3px 2px 2px #202b1f;
+  z-index: 0;
+
+}
+
+#conteneur3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid rgb(199, 226, 185);
+  border-radius: 10px 10px 10px 10px;
+  font-size: 20px;
+  color: darkgreen;
+  background: rgb(134,157,94);
+  background: linear-gradient(90deg, rgba(134,157,94,1) 0%, rgba(230,251,194,1) 35%, rgba(134,157,94,1) 100%);
+  z-index: 0;
+  font-family: "louisgc";
+  height: 30px;
+  
+ 
+}
+
+#logo{
+  width: 200px;
+  height: 200px;
+
+}
+
+#goatoutondre{
+  font-family: "wild";
+  font-size: 140px;
+  text-shadow: 10px 10px 15px black;
+}
+
+#PP{
+    border: 5px solid rgb(116, 153, 109);  
+    border-radius: 20%;
+    width: 300px;
+    height: 250px;
+    margin-left: 170px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: 320px;
+    width: 800px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: "Louisgc" ;
+   
+    
+}
+
+
+  #NomPrenom{
+    margin-right: 20px;
+    margin-top: 100px;
+   
+  }
+
+  
+  input
+{
+height: 15px;
+width: 100px;
+margin: 10px;
+margin-top: 30px;
+}
+
+body{
+  background-color: rgb(246, 235, 190);
+  
+}
+
+#compte{
+  text-align: center;
+  font-size: 40px;
+  font-family:"Louisgc" ;
+  color: rgb(116, 153, 109);  
+  margin-top: 15px;
+  text-decoration:underline;
+  
+}
+
+#tapernom{
+  border: 4px solid rgb(134,157,94);
+ background-color: rgb(246, 237, 206) ;
+ border-radius:  15px 15px 15px 15px;
+ 
+}
+
+#taperadresse{
+  border: 4px solid rgb(134,157,94);
+ background-color: rgb(246, 237, 206) ;
+ border-radius:  15px 15px 15px 15px;
+ 
+ margin-left: 83px;
+}
+
+#tapernumero{
+  border: 4px solid rgb(134,157,94);
+ background-color: rgb(246, 237, 206) ;
+ border-radius:  15px 15px 15px 15px;
+ margin-left: 111px;
+ 
+}
+
+#tapermail{
+  border: 4px solid rgb(134,157,94);
+ background-color: rgb(246, 237, 206);
+ border-radius:  15px 15px 15px 15px;
+ margin-left: 99px;
+ 
+}
+
+.vignettes{
+  display:flex;
+  margin-left: 100px;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content:space-evenly;
+  padding-left: 50px;
+  margin-right: 100px; 
+  width: auto;
+}
+
+#avis{
+  border: 4px solid rgb(134,157,94);
+  border-radius: 50%;
+  background-color: rgb(246, 237, 206);
+}
+
+#histo{
+  border: 4px solid rgb(134,157,94);
+  border-radius: 50%;
+  background-color: rgb(246, 237, 206);
+}
+
+#suivi{
+  border: 4px solid rgb(134,157,94);
+  border-radius: 50%;
+  background-color: rgb(246, 237, 206);
+}
+
+#Davis{
+  font-size: 25px;
+  padding-left: 55px;
+  position:absolute; top: 960px; left: 220px;
+  color: rgb(116, 153, 109); 
+  font-family: "louisgc";
+}
+
+#Dhisto{
+  font-size: 25px;
+  padding-left: 55px;
+  position:absolute; top: 960px; left: 555px;
+  color: rgb(116, 153, 109); 
+  font-family: "louisgc";
+}
+
+#Dsuivi{
+  font-size: 25px;
+  padding-left: 55px;
+  position:absolute; top: 960px; left: 992px;
+  color: rgb(116, 153, 109); 
+  font-family: "louisgc";
+}
+
+#modifier1{
+  position: absolute; top: 360px; left: 1305px;
+  height: 18px;
+  width:18px;
+  
+}
+
+#modifier2{
+  position: absolute; top: 425px; left: 1305px;
+  height: 18px;
+  width:18px;
+  
+}
+
+#modifier3{
+  position: absolute; top: 490px; left: 1305px;
+  height: 18px;
+  width:18px;
+  
+}
+
+#modifier4{
+  position: absolute; top: 555px; left: 1305px;
+  height: 18px;
+  width:18px;
+ 
+}
