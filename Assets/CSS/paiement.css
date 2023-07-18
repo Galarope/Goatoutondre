@@ -1,6 +1,45 @@
+
+@font-face {
+    font-family: 'Louisgc';
+    src: url(../Fonts/LouisGeorgeCafe.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Louisgcbold';
+    src: url(../Fonts/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'wild';
+    src: url(../Fonts/Wild\ Nature.ttf) format(truetype);
+}
+
+@font-face {
+    font-family:'nature';
+    src: url(../Fonts/Drawing\ Nature.ttf) format(truetype);
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(122, 147, 112);
+    }
+    
 * {
     box-sizing: content-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'louisgc';
 }
 
 h2 {
