@@ -1,6 +1,45 @@
+
+@font-face {
+    font-family: 'Louisgc';
+    src: url(../Fonts/LouisGeorgeCafe.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Louisgcbold';
+    src: url(../Fonts/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'wild';
+    src: url(../Fonts/Wild\ Nature.ttf) format(truetype);
+}
+
+@font-face {
+    font-family:'nature';
+    src: url(../Fonts/Drawing\ Nature.ttf) format(truetype);
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(122, 147, 112);
+    }
+    
 * {
     box-sizing: content-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'louisgc';
 }
 
 h2 {
@@ -13,6 +52,10 @@ h2 {
     padding: 10px;
 }
 
+li {
+    list-style: none;
+}
+
 input:focus {
     outline: none;
 }
@@ -22,7 +65,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .form-field, .basket {
@@ -39,7 +82,34 @@ input:focus {
 }
 
 .basket .list {
+    padding: 0 20px;
     overflow: auto;
+}
+
+
+/**/
+.card .product h3, p {
+    margin: 5px 0;
+}
+
+.list .card {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: 0.4s;
+}
+
+.list .card:hover {
+    background-color: rgb(213, 210, 210);
+}
+
+.list .card .product {
+    width: 75%;
+}
+
+.list .card .product-img {
+    margin-right: 10px;
 }
 
 /**/
@@ -112,6 +182,30 @@ div.icon-group {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+}
+
+/**/
+.paypal-payment .flex {
+    justify-content: center;
+}
+
+.paypal-payment .flex p {
+    font-size: 25px;
+    margin: 0 10px; 
+}
+
+.paypal-payment .flex .p-small {
+    font-size: 20px;
+}
+
+.paypal-payment .flex .strike-deco {
+    width: 130px;
+    padding-top: 13px;
+}
+
+.paypal-payment .flex .paypal-icon {
+    width: 64px;
+    margin: 15px 0;
 }
 
 

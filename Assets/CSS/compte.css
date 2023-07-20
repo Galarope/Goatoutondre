@@ -1,16 +1,11 @@
 @font-face {
-  font-family: 'woodyssey';
-  src: url(Fonts/WOODYSSEY.ttf) format(truetype);
-}
-
-@font-face {
-  font-family: 'eacolo';
-  src: url(../Goatoutondre/Fonts/eacologica-round-slab-ffp.ttf) format(truetype);
-}
-
-@font-face {
   font-family: 'Louisgc';
   src: url(../Fonts/LouisGeorgeCafe.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'Louisgcbold';
+  src: url(../Fonts/Louis\ George\ Cafe\ Bold.ttf);
 }
 
 @font-face {
@@ -18,56 +13,132 @@
   src: url(../Fonts/Wild\ Nature.ttf) format(truetype);
 }
 
-#conteneur2 {
+@font-face {
+  font-family:'nature';
+  src: url(../Fonts/Drawing\ Nature.ttf) format(truetype);
+}
 
+* {
+  margin: 0px;
+  padding:0px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(122, 147, 112);
+}
+
+#conteneur2 {
   display:flex;
   justify-content:center;
   align-items: center;
-  height: 180px;
-  margin-left: 100px;
+  height: 250px;
+  margin-left: 150px;
   margin-right: 150px;
-  font-family: 'wild';
-  font-size: 100px;
-  color: rgb(116, 153, 109);
-  text-shadow: 3px 2px 2px #202b1f;
+  margin-bottom: 0;
+  margin-top: -15px;
   z-index: 0;
-
 }
 
 #conteneur3 {
+  height:50px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 80px;
   padding-right: 80px;
   display:flex;
   align-items: center;
-  justify-content: space-evenly;
-  border: 1px solid rgb(199, 226, 185);
+  justify-content:space-around;
+  border: 1px solid rgb(246, 246, 246);
   border-radius: 10px 10px 10px 10px;
-  font-size: 20px;
-  color: darkgreen;
+  text-shadow: 0px 10px 15px rgb(248, 248, 248);
+  font-size: 18px;
+  color: rgb(4, 4, 4);
   background: rgb(134,157,94);
-  background: linear-gradient(90deg, rgba(134,157,94,1) 0%, rgba(230,251,194,1) 35%, rgba(134,157,94,1) 100%);
-  z-index: 0;
-  font-family: "louisgc";
-  height: 30px;
-  
- 
+  background: linear-gradient(90deg, rgba(134,157,94,1) 0%, rgba(230,251,194,1) 50%, rgba(134,157,94,1) 100%);
+  z-index: 1;
+  position:sticky;
+  top:0%;
+  opacity:0.95;
 }
 
-#logo{
+#accueil {
+  display: flex;
+  align-items: center;
+}
+#logo {
   width: 200px;
-  height: 200px;
-
+  height:200px;
 }
 
-#goatoutondre{
-  font-family: "wild";
+#goatoutondre {
+  display:flex;
+  align-items:end;
+  align-content: end;
+  padding-left: 50px;
+  font-family: 'wild';
   font-size: 140px;
-  text-shadow: 10px 10px 15px black;
+  color: rgb(136, 173, 128);
+  text-shadow: 10px 10px 5px rgb(49, 49, 47);
+}
+#alternative {
+  display:flex;
+  font-family: 'Louisgcbold';
+  font-size: 40px;
+  font-style: italic;
+  color:rgb(251, 251, 251);
+  margin-top: 150px;
+  margin-left:-300px;
+  text-shadow: 2px 2px 0px rgb(49, 49, 47);
 }
 
-#PP{
+#searchbox1 {
+  display:flex; 
+  background-color: rgb(136, 160, 136);
+  border: 1px solid rgb(250, 250, 250);
+  font-family:"louisgc";
+}
+
+#search-button {
+  border: 1px solid rgb(250, 250, 250);
+  height:30px;
+  background: rgb(208,237,203);
+  background: linear-gradient(4deg, rgba(208,237,203,1) 0%, rgba(246,238,208,1) 51%, rgba(208,237,203,1) 100%);
+  font-family:"louisgc";
+  color: rgb(68, 120, 68);
+  font-size: small;
+}
+
+#site-search {
+  width: 210px;
+  font-size: smaller;
+}
+
+#moncompte {
+  font-family: 'wild';
+  font-size: 50px;
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
+  color: rgb(136, 160, 136);
+  margin-top: 30px;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background-color: rgb(247, 233, 212) !important;
+  font-size: 20px;
+  font-family: 'louisgc' !important;
+}
+/* #PP{
     border: 5px solid rgb(116, 153, 109);  
     border-radius: 20%;
     width: 300px;
@@ -90,15 +161,14 @@
 }
 
 
-  #NomPrenom{
-    margin-right: 20px;
-    margin-top: 100px;
+#NomPrenom{
+  margin-right: 20px;
+  margin-top: 100px;
    
   }
 
   
-  input
-{
+input {
 height: 15px;
 width: 100px;
 margin: 10px;
@@ -106,8 +176,10 @@ margin-top: 30px;
 }
 
 body{
-  background-color: rgb(246, 235, 190);
-  
+  margin:0;
+  background-color: rgb(247, 233, 212) !important;
+  font-size: 20px;
+  font-family: 'louisgc' !important;
 }
 
 #compte{
@@ -180,30 +252,6 @@ body{
   background-color: rgb(246, 237, 206);
 }
 
-#Davis{
-  font-size: 25px;
-  padding-left: 55px;
-  position:absolute; top: 960px; left: 220px;
-  color: rgb(116, 153, 109); 
-  font-family: "louisgc";
-}
-
-#Dhisto{
-  font-size: 25px;
-  padding-left: 55px;
-  position:absolute; top: 960px; left: 555px;
-  color: rgb(116, 153, 109); 
-  font-family: "louisgc";
-}
-
-#Dsuivi{
-  font-size: 25px;
-  padding-left: 55px;
-  position:absolute; top: 960px; left: 992px;
-  color: rgb(116, 153, 109); 
-  font-family: "louisgc";
-}
-
 #modifier1{
   position: absolute; top: 360px; left: 1305px;
   height: 18px;
@@ -230,4 +278,45 @@ body{
   height: 18px;
   width:18px;
  
+} */
+#pieddepage {
+  display:flex;
+  flex-flow: column wrap;
+  text-align: left;
+  align-content: space-around;
+  padding-top: 10px;
+  line-height: 30px;
+  height:70px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  background: rgb(219, 237, 170);
+}
+
+#livraison {
+  display:flex;
+  flex-direction: column;
+  text-align: end;
+}
+#camion {
+  height:40px;
+  width:40px;
+  margin-left:30px;
+ 
+}
+
+#mpaiement {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: -10px;
+}
+#paypal {
+  margin-top:8px;
+  margin-left:10px;
+}
+
+#reseaux {
+  display: flex;
+  flex-direction: row;
+  margin-top:5px;
 }
