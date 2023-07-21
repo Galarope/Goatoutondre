@@ -2,49 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Goatoutondre </title>
-    <link rel="stylesheet" href="../Assets/CSS/compte.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Goatoutondre </title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Assets/CSS/compte.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <header>
+    <div id="header">
+      <div id="conteneur2">
+        <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png">
+        <span id="goatoutondre"> Goatoutondre </span>
+        <span id="alternative"> L'Alternative Écologique </span>
+      </div>
+    </div>
+  </header>
+  <nav id="conteneur3">
+    <a href="index.html"><img src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px" height="35px"></a>
 
-    <header>
-        <div id="header">
-            <div id="conteneur2">
-                <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png">
-                <span id="goatoutondre"> Goatoutondre </span>
-                <span id="alternative"> L'Alternative Écologique </span>
-            </div>
+    <a>A propos</a>
+
+    <a href="Boutique.html" title="Lien vers la boutique">Boutique</a>
+
+    <a>Trucs et Astuces</a>
+
+    <a href="compte.html">Mon Compte</a>
+
+    <a>Login</a>
+
+    <a><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
+
+    <label id="searchbox1" for="site-search">
+      <input type="search" id="site-search" name="q" placeholder="Tapez ici votre recherche">
+
+      <button id="search-button">Rechercher</button>
+    </label>
+  </nav>
+  <section id="moncompte">Mon compte</section>
+  <div class="tableau">
+    <div role="tablist" aria-label="tabs component" class="tabs-btn-container">
+      <button role="tab" aria-controls="panel-1" id="tab-1" type="button" aria-selected="true" tabindex="0"
+        class="tab active-tab">
+        Profil
+      </button>
+      <button role="tab" aria-controls="panel-2" id="tab-2" type="button" aria-selected="false" tabindex="-1"
+        class="tab">
+        Suivi des Commandes
+      </button>
+      <button role="tab" aria-controls="panel-3" id="tab-3" type="button" aria-selected="false" tabindex="-1"
+        class="tab">
+        Donner mon avis
+      </button>
+    </div>
+    <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" class="tab-content active-tab-content">
+      <div id="profil">
+        <img id="avatar" src="../Assets/Images/logos_icones/avatarnongenre.jpg" width="200px" height="200px">
+        <!--Profil-->
+        <div id="infoscoordonnees">
+          <!-- Afficher les coordonnées saisies lors de la création du compte client -->
         </div>
-    </header>
-    <nav id="conteneur3">
-        <a href="index.html"><img src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
-                height="35px"></a>
+      </div>
+    </div>
 
-        <a>A propos</a>
+    <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" class="tab-content">
+      <!--Suivi des Commandes-->
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus nemo eveniet alias quo, dolor quisquam ut a eligendi
+        vero, consequatur, quis cum. Saepe esse debitis ducimus? Quod fugiat
+        obcaecati veritatis amet voluptatum doloribus neque commodi qui quasi
+        illo eum placeat odio ipsam, at, tempore accusamus dicta deleniti
+        explicabo! Quisquam ullam minima iure! Assumenda adipisci consequuntur
+        soluta provident alias fuga quidem ad aperiam magnam nesciunt
+        quibusdam, et qui. Omnis dignissimos pariatur consequatur eos aut,
+        iste voluptatum!
+      </p>
+    </div>
 
-        <a href="Boutique.html" title="Lien vers la boutique">Boutique</a>
-
-        <a>Trucs et Astuces</a>
-
-        <a href="compte.html">Mon Compte</a>
-
-        <a>Login</a>
-
-        <a><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
-
-        <label id="searchbox1" for="site-search">
-            <input type="search" id="site-search" name="q" placeholder="Tapez ici votre recherche">
-
-            <button id="search-button">Rechercher</button>
-        </label>
-    </nav>
-    <section id="moncompte">Mon compte</section>
-
-    <!-- <h2>Profile settings</h2>
+    <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" class="tab-content">
+      <!--Donner mon avis-->
+      <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+      </div>
+      <div id="avisarea">
+        <textarea id="textavis" placeholder="Ecrivez ici votre commentaire puis cliquez sur Valider" rows="8"
+          cols="80"></textarea>
+        <div id="btn-envoyer">
+          <button type="submit" name="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"> Valider
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Avis Client</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Merci pour votre commentaire !
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                    onclick="vidange()">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <h2>Profile settings</h2>
     <div class="flex-container">
         <figure> <img id="PP" src="../Assets/Images/f2d1c222b3636f6d1c222b363bad1cv-960x640.jpg" width="250"
                 height="190"></figure>
@@ -86,35 +170,36 @@
     <img id="modifier3" src="../Assets/Images/modifier.png">
     <img id="modifier4" src="../Assets/Images/modifier.png"> -->
 
-    <footer>
-        <nav id="pieddepage">
-            <a href="contact.html">Contact</a>
+  <footer>
+    <nav id="pieddepage">
+      <a href="contact.html">Contact</a>
 
-            <a>FAQ</a>
+      <a>FAQ</a>
 
-            <!-- page a developper si on a le temps, avec présentation de la nurserie -->
-            <a>Nos partenaires</a>
+      <!-- page a developper si on a le temps, avec présentation de la nurserie -->
+      <a>Nos partenaires</a>
 
-            <a>Mentions Légales</a>
+      <a>Mentions Légales</a>
 
-            <a>CGV</a>
+      <a href="../HTML/CGV..html">CGV</a>
 
-            <a>Politique de Confidentialité</a>
+      <a>Politique de Confidentialité</a>
 
-            <div id="mpaiement">
-                <img src="../Assets/Images/logos_icones/icons8-carte-bancaire-face-arrière-50.png">
-                <img id="paypal" src="../Assets/Images/logos_icones/icons8-paypal-50.png">
-            </div>
-            <div id="livraison">
-                <img id="camion" src="../Assets/Images/logos_icones/icons8-livraison-50.png">
-                Livraison sous 24h
-            </div>
+      <div id="mpaiement">
+        <img src="../Assets/Images/logos_icones/icons8-carte-bancaire-face-arrière-50.png">
+        <img id="paypal" src="../Assets/Images/logos_icones/icons8-paypal-50.png">
+      </div>
+      <div id="livraison">
+        <img id="camion" src="../Assets/Images/logos_icones/icons8-livraison-50.png">
+        Livraison sous 24h
+      </div>
 
-            <div id="reseaux">
-                <a href="https://www.facebook.com/Goatoutondre-104168132751486"><img class="logoreseau"
-                        src="../Assets/Images/logos_icones/icons8-facebook-50.png"></a>
-                <a href="..."><img class="logoreseau" src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
-            </div>
-        </nav>
-    </footer>
+      <div id="reseaux">
+        <a href="https://www.facebook.com/Goatoutondre-104168132751486"><img class="logoreseau"
+            src="../Assets/Images/logos_icones/icons8-facebook-50.png"></a>
+        <a href="..."><img class="logoreseau" src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
+      </div>
+    </nav>
+  </footer>
+  <script src="../Assets/JS/compte.js"></script>
 </body>

@@ -23,6 +23,10 @@
   padding:0px;
 }
 
+*, ::after, ::before {
+  box-sizing: content-box;
+}
+
 a:link {
   text-decoration: none;
   color: black;
@@ -50,8 +54,8 @@ a:hover {
 
 #conteneur3 {
   height:50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   padding-left: 80px;
   padding-right: 80px;
   display:flex;
@@ -128,7 +132,7 @@ a:hover {
   text-shadow: 5px 5px 5px black;
   text-align: center;
   color: rgb(136, 160, 136);
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 body{
@@ -138,147 +142,147 @@ body{
   font-size: 20px;
   font-family: 'louisgc' !important;
 }
-/* #PP{
-    border: 5px solid rgb(116, 153, 109);  
-    border-radius: 20%;
-    width: 300px;
-    height: 250px;
-    margin-left: 170px;
+/* onglet profil */
+
+#profil {
+  display:flex;
+  flex-direction: row;
+  padding: 20px;
+}
+#avatar {
+  Border:2px solid rgb (136, 160, 136);
+  border-radius: 10%;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: auto;
-    height: 320px;
-    width: 800px;
-    margin-left: 30px;
-    margin-top: 20px;
-    font-family: "Louisgc" ;
-   
-    
+#infoscoordonnees {
+  padding-left:50px;
+  text-align: start;
 }
 
-
-#NomPrenom{
-  margin-right: 20px;
-  margin-top: 100px;
-   
+.tableau {
+  background-color:rgb(223, 234, 171);
+  max-width: 1200px;
+  margin: 20px auto 80px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  color: #000000;
+  display: grid;
+  grid-template-rows: min-content 1fr;
   }
 
+  .tabs-btn-container {
+  display: flex;
+  border-bottom: 1px solid #fbfbfb;
+  }
+
+  .tab {
+  border: none;
+  background-color: rgb(136, 160, 136);
+  color: #000000;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 700;
+  padding: 30px 0;
+  cursor: pointer;
+  }
+
+  .tab:not(:nth-child(3), .tab.active-tab) {
+  border-right: 1px solid #ffffff;
+  }
+
+  .tab:nth-child(1) {
+  border-top-left-radius: 9px;
+  }
+
+  .tab:nth-child(3) {
+  border-top-right-radius: 9px;
+  }
+
+  .tab-content {
+  grid-area: 2 / 1 / 3 / 2;
+  padding: clamp(35px, 3vw, 40px);
+  min-height: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-out;
+  }
+
+  .tab-content p {
+  margin-top: 20px;
+  line-height: 1.6;
+  }
+
+  .tab-content h3 {
+  font-size: clamp(20px, 2vw, 25px);
+  }
   
-input {
-height: 15px;
-width: 100px;
-margin: 10px;
-margin-top: 30px;
+  /* Animations */
+  .active-tab {
+    background: linear-gradient(4deg, rgba(208,237,203,1) 0%, rgba(246,238,208,1) 51%, rgba(208,237,203,1) 100%);
+  color: #000000
+  }
+
+  .active-tab-content {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
 }
 
-body{
-  margin:0;
-  background-color: rgb(247, 233, 212) !important;
-  font-size: 20px;
-  font-family: 'louisgc' !important;
+#panel-3 {
+display:flex;
+flex-direction: column;
+align-items: start;
+padding-left:100px;
 }
 
-#compte{
+.modal-content {
+  background-color: rgb(238, 244, 224);
+}
+
+.modal-body {
+  font-size: 30px !important;
   text-align: center;
-  font-size: 40px;
-  font-family:"Louisgc" ;
-  color: rgb(116, 153, 109);  
-  margin-top: 15px;
-  text-decoration:underline;
-  
 }
 
-#tapernom{
-  border: 4px solid rgb(134,157,94);
- background-color: rgb(246, 237, 206) ;
- border-radius:  15px 15px 15px 15px;
- 
-}
-
-#taperadresse{
-  border: 4px solid rgb(134,157,94);
- background-color: rgb(246, 237, 206) ;
- border-radius:  15px 15px 15px 15px;
- 
- margin-left: 83px;
-}
-
-#tapernumero{
-  border: 4px solid rgb(134,157,94);
- background-color: rgb(246, 237, 206) ;
- border-radius:  15px 15px 15px 15px;
- margin-left: 111px;
- 
-}
-
-#tapermail{
-  border: 4px solid rgb(134,157,94);
- background-color: rgb(246, 237, 206);
- border-radius:  15px 15px 15px 15px;
- margin-left: 99px;
- 
-}
-
-.vignettes{
-  display:flex;
-  margin-left: 100px;
-  margin-top: 50px;
-  flex-direction: row;
-  justify-content:space-evenly;
-  padding-left: 50px;
-  margin-right: 100px; 
-  width: auto;
-}
-
-#avis{
-  border: 4px solid rgb(134,157,94);
-  border-radius: 50%;
-  background-color: rgb(246, 237, 206);
-}
-
-#histo{
-  border: 4px solid rgb(134,157,94);
-  border-radius: 50%;
-  background-color: rgb(246, 237, 206);
-}
-
-#suivi{
-  border: 4px solid rgb(134,157,94);
-  border-radius: 50%;
-  background-color: rgb(246, 237, 206);
-}
-
-#modifier1{
-  position: absolute; top: 360px; left: 1305px;
-  height: 18px;
-  width:18px;
-  
-}
-
-#modifier2{
-  position: absolute; top: 425px; left: 1305px;
-  height: 18px;
-  width:18px;
-  
-}
-
-#modifier3{
-  position: absolute; top: 490px; left: 1305px;
-  height: 18px;
-  width:18px;
-  
-}
-
-#modifier4{
-  position: absolute; top: 555px; left: 1305px;
-  height: 18px;
-  width:18px;
- 
-} */
+/* footer */
 #pieddepage {
   display:flex;
   flex-flow: column wrap;
@@ -289,6 +293,7 @@ body{
   height:70px;
   font-size: 15px;
   color: rgb(0, 0, 0);
+  border: 1px solid white;
   background: rgb(219, 237, 170);
 }
 
