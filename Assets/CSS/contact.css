@@ -113,6 +113,7 @@ a:hover {
     font-family:"louisgc";
     color: rgb(68, 120, 68);
     font-size: small;
+    cursor: pointer;
 }
     
 #site-search {
@@ -127,7 +128,7 @@ body {
 }
 
 #infos {
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: 'wild';
     color:rgb(136, 160, 136);
     text-shadow: 5px 5px 5px black;
@@ -142,77 +143,65 @@ body {
     
 }
 
-.colonne2 {
-  
-    
-}
 #tableau {
     display:flex;
     justify-content: center;
 }
 
-input {
+#mrmmenb {
+    margin:0;
+}
+
+textarea {
+    margin-top:10px;
+}
+
+input, textarea, #mrmmenb {
     width: 100%;
+    height: 30px;
+    background-color: rgb(252, 246, 236);
+    border: 2px solid white;
+    opacity:0.95;
+    font-family: "louisgc";
 }
-
+/* <tr id="message"> solution à trouver pour agrandir la zone de saisie texte */
+/* #message {
+    height:200px;
+} */
 #envoyer {
-    margin-left: 650px;
-    border:rgb(255, 255, 255) solid;
+    margin-left:915px;
+    height:50%;
+    border: 2px rgb(255, 255, 255) solid;
+    color: rgb(68, 120, 68);
+    background: rgb(208,237,203);
+    background: linear-gradient(4deg, rgba(208,237,203,1) 0%, rgba(246,238,208,1) 51%, rgba(208,237,203,1) 100%);
+    font-family: "louisgc";
     width:10%;
+    margin-bottom: 30px;
+    cursor: pointer;
 }
-/* #form {
-    display: flex;
-    flex-direction: column;
-    padding-left: 360px;
-    margin-left: 100px;
-    text-align: left;
-} */
-
-
- /* input, #mrmmenb {
-    width: 600px;
-    height: 25px;
-    display: flex;
-    align-items: flex-end;
-    align-content: center; 
-} */
-/* .champs input {
-    margin-left: 300px;
-    background:linear-gradient(white,green,white);
-    width: 50%;
-} */
-
-/* #telephone {
-    display:flex;
-    align-content: space-between;
-} */
-
-/* #messagetext {
-    margin-left: 300px;
-} */
 
 #pieddepage {
     display:flex;
     flex-flow: column wrap;
     text-align: left;
     align-content: space-around;
-    padding-top: 20px;
-    line-height: 40px;
-    height:130px;
+    padding-top: 10px;
+    line-height: 30px;
+    height:70px;
     font-size: 15px;
     color: rgb(0, 0, 0);
-    background: rgb(134,157,94);
-    background: linear-gradient(90deg, rgba(134,157,94,1) 0%, rgba(230,251,194,1) 50%, rgba(134,157,94,1) 100%);
+    background: rgb(219, 237, 170);
 }
 
 #livraison {
     display:flex;
     flex-direction: column;
-    text-align: start;
+    text-align: end;
 }
 #camion {
-    height:50px;
-    width:50px;
+    height:40px;
+    width:40px;
     margin-left:30px;
    
 }
@@ -230,9 +219,6 @@ input {
 
 #reseaux {
     display: flex;
-    flex-direction: column;
-}
-
-#insta {
-    vertical-align: middle;
+    flex-direction: row;
+    margin-top:5px;
 }
