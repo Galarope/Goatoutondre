@@ -1,3 +1,23 @@
-#table{
-   color: gray;
+table{
+   background-color:rgb(122, 147, 112);
+   text-align: center;
+   width: 80%;
+    border: 1px solid blue;
+    color: black;
+    
+}
+h1{
+    text-align: center;
+}
+.product{
+    text-align: center;
+    background-color: gray;
+
+}
+body{
+    background-color: grey;
+}
+.product {
+    width: 80%;
+    border: 1px solid blue;
 }
