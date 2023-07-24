@@ -4,30 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Goatoutondre </title>
+    <title> A propos </title>
     <link rel="stylesheet" href="../Assets/CSS/A.propos.css">
+    <link rel="stylesheet" href="../Assets/CSS/headerFooter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </head>
-
 <header>
     <div id="header">
         <div id="conteneur2">
-            <img id="logo" src="../Assets/Images/LogoGoatoutondre-removebg.png" width="200" height="200">
+            <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png">
             <span id="goatoutondre"> Goatoutondre </span>
+            <span id="alternative"> L'Alternative Écologique </span>
         </div>
-
-        <nav id="conteneur3">
-            <a>Accueil</a>
-            <a>A propos</a>
-            <a>Boutique</a>
-            <a>Trucs et Astuces</a>
-            <a>Contact</a>
-            <a>Mon Compte</a>
-            <a>Login</a>
-            <a><img src="../Assets/Images/pngegg (1).png" width="50"></a>
-        </nav>
-
     </div>
 </header>
+<nav id="conteneur3">
+    <a href="index.html"><img id="accueil" src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
+            height="35px"></a>
+
+    <a href="A.propos.html">A propos</a>
+
+    <a href="Boutique.html" title="Lien vers al boutique">Boutique</a>
+
+    <a href="astuces.html">Trucs et Astuces</a>
+
+    <a href="compte.html">Mon Compte</a>
+
+    <a href="login.html">Login</a>
+
+    <a href="panier.html"><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
+
+    <label id="searchbox1" for="site-search">
+        <input type="search" id="site-search" name="q" placeholder="Tapez ici votre recherche">
+
+        <button id="search-button">Rechercher</button>
+    </label>
+</nav>
 
 
 <body>
@@ -52,24 +68,54 @@
     </div>
 
     <div id="container1"></div>
-   <div id="container2">
+    <div id="container2">
         <img src="../Assets/Images/goat-1461917_640.jpg" id="image" width="300px" height="300px" alt="chèvre">
-    
-    
-    <div id="texte">
+
+
+        <div id="texte">
             <h1>NOS PRESTATIONS</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi enim est officiis commodi? Ratione aut
                 molestias voluptatibus, cum harum eaque ipsum delectus quod, deleniti in architecto alias facilis qui
                 maiores! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet dignissimos assumenda aut
                 aliquam
                 voluptatibus. Provident quas cumque eum quia temporibus, necessitatibus nostrum aliquid nemo, ipsam enim
-                eveniet, quo facilis fuga! Lorem</p> 
-            </div>
+                eveniet, quo facilis fuga! Lorem</p>
         </div>
     </div>
+    </div>
+
+    <footer>
+        <nav id="pieddepage">
+            <a href="contact.html">Contact</a>
+
+            <a href="FAQ.html">FAQ</a>
+
+            <!-- page a developper si on a le temps, avec présentation de la nurserie -->
+            <a href="partenaires.html">Nos partenaires</a>
+
+            <a href="mentionlegales.html">Mentions Légales</a>
+
+            <a href="CGV..html">CGV</a>
+
+            <a href="politiquedeconfidentialite.html">Politique de Confidentialité</a>
+
+            <div id="mpaiement">
+                <img src="../Assets/Images/logos_icones/icons8-carte-bancaire-face-arrière-50.png">
+                <img id="paypal" src="../Assets/Images/logos_icones/icons8-paypal-50.png">
+            </div>
+            <div id="livraison">
+                <img id="camion" src="../Assets/Images/logos_icones/icons8-livraison-50.png">
+                Livraison sous 24h
+            </div>
+
+            <div id="reseaux">
+                <a href="https://www.facebook.com/Goatoutondre-104168132751486"><img class="logoreseau"
+                        src="../Assets/Images/logos_icones/icons8-facebook-50.png"></a>
+                <a href="..."><img src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
-<footer>
-    <nav></nav>
-</footer>
 
 </html>

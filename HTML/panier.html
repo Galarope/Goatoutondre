@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Assets/CSS/panier.css">
-    
-        <div id="conteneur2">
-            <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png">
-            <span id="goatoutondre"> Goatoutondre </span>
-            <span id="alternative"> L'Alternative Écologique      </span>
-        
-        </div>
-    </div>
-    
-    <title>Panier</title>
-    </head>
+    <link rel="stylesheet" href="../Assets/CSS/headerFooter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
 <body>
-    <main>
-        <h1></h1>
-        <a1><nav id="conteneur3"></nav>
-       
-            <a href="index.html"><img src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
+    <header>
+        <div id="header">
+            <div id="conteneur2">
+                <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png">
+                <span id="goatoutondre"> Goatoutondre </span>
+                <span id="alternative"> L'Alternative Écologique </span>
+            </div>
+        </div>
+    </header>
+    <nav id="conteneur3">
+        <a href="index.html"><img id="accueil" src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
                 height="35px"></a>
 
-        <a>A propos</a>
+        <a href="A.propos.html">A propos</a>
 
-        <a href="Boutique.html" title="Lien vers la boutique">Boutique</a>
+        <a href="Boutique.html" title="Lien vers al boutique">Boutique</a>
 
-        <a>Trucs et Astuces</a>
+        <a href="astuces.html">Trucs et Astuces</a>
 
         <a href="compte.html">Mon Compte</a>
 
-        <a>Login</a>
+        <a href="login.html">Login</a>
 
-        <a><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
+        <a href="panier.html"><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
 
         <label id="searchbox1" for="site-search">
             <input type="search" id="site-search" name="q" placeholder="Tapez ici votre recherche">
 
             <button id="search-button">Rechercher</button>
-        </a1>
         </label>
-      
     </nav>
-
-        
-
-
-         
-        
-            <div class="basket">
+    <main>
+        <div class="basket">
 
             <h2>Votre panier</h2>
 
             <ul class="list">
                 <li class="card">
-                    <img class="product-img" src="/" width="100px" height="100px"/>
+                    <img class="product-img" src="/" width="100px" height="100px" />
                     <div class="product">
                         <h3>Name</h3>
                         <div class="description">Lorem ipsum dolor sit</div>
@@ -65,7 +62,7 @@
                 </li>
 
                 <li class="card">
-                    <img class="product-img" src="/" width="100px" height="100px"/>
+                    <img class="product-img" src="/" width="100px" height="100px" />
                     <div class="product">
                         <h3>Name</h3>
                         <div class="description">Lorem ipsum dolor sit</div>
@@ -75,7 +72,7 @@
                 </li>
 
                 <li class="card">
-                    <img class="product-img" src="/" width="100px" height="100px"/>
+                    <img class="product-img" src="/" width="100px" height="100px" />
                     <div class="product">
                         <h3>Name</h3>
                         <div class="description">Lorem ipsum dolor sit</div>
@@ -88,18 +85,19 @@
         </div>
     </main>
     <footer>
-        <nav id="footer">
+        <nav id="pieddepage">
             <a href="contact.html">Contact</a>
 
-            <a>FAQ</a>
-            
-            
-            <a>Nos partenaires</a>
-            <a>Mentions Légales</a>
+            <a href="FAQ.html">FAQ</a>
 
-            <a>CGV</a>
+            <!-- page a developper si on a le temps, avec présentation de la nurserie -->
+            <a href="partenaires.html">Nos partenaires</a>
 
-            <a>Politique de Confidentialité</a>
+            <a href="mentionlegales.html">Mentions Légales</a>
+
+            <a href="CGV..html">CGV</a>
+
+            <a href="politiquedeconfidentialite.html">Politique de Confidentialité</a>
 
             <div id="mpaiement">
                 <img src="../Assets/Images/logos_icones/icons8-carte-bancaire-face-arrière-50.png">
@@ -113,9 +111,10 @@
             <div id="reseaux">
                 <a href="https://www.facebook.com/Goatoutondre-104168132751486"><img class="logoreseau"
                         src="../Assets/Images/logos_icones/icons8-facebook-50.png"></a>
-                <a href="..."><img class="logoreseau" src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
+                <a href="..."><img src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
             </div>
         </nav>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
