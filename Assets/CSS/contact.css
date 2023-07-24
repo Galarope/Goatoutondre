@@ -123,7 +123,7 @@ a:hover {
     
 body {
     background-color: rgb(247, 233, 212);
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'louisgc' !important;
 }
 
@@ -154,6 +154,7 @@ body {
 
 textarea {
     margin-top:10px;
+    height:200px !important;
 }
 
 input, textarea, #mrmmenb {
@@ -164,12 +165,9 @@ input, textarea, #mrmmenb {
     opacity:0.95;
     font-family: "louisgc";
 }
-/* <tr id="message"> solution à trouver pour agrandir la zone de saisie texte */
-/* #message {
-    height:200px;
-} */
+
 #envoyer {
-    margin-left:915px;
+    margin-left:940px;
     height:50%;
     border: 2px rgb(255, 255, 255) solid;
     color: rgb(68, 120, 68);
