@@ -192,6 +192,7 @@ input, textarea, #mrmmenb {
     font-size: 15px;
     color: rgb(0, 0, 0);
     background: rgb(219, 237, 170);
+    border: 1px solid white;
 }
 
 #livraison {

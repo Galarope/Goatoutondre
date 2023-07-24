@@ -2,54 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="Stylepagearticle.css" rel="stylesheet" type="text/css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Assets/CSS/page.article.css">
 </head>
-<div>
 
-    <header>
-        <img src="LOGO.png" alt="Logo Goatoutondre">
+<body>
 
-        <h1>Goatoutondre</h1>
-        <h2>L'alternative écologique</h2>
-        <nav>
-            <ul class="menu">
-                <!-- Il manque les icônes acceuil, compte et panier -->
-                <li><a href>A propos</a></li>
-                <li><a href>Boutique</a></li>
-                <li><a href>Trucs & astuces</a></li>
-                <li><a href>Contact</a></li>
-                <li><a href>Mon compte</a></li>
-                <li><a href>Panier</a></li>
-            </ul>
-        </nav>
+<!--
+  <header>
+    <div id="header">
+      <div id="conteneur1">
+        <source src="../Images/pexels-roman-odintsov-6666906 (2160p).mp4" type="video/mp4" width="50%">
+        </video>
+      </div>
+      <div id="conteneur2">
+        <img id="logo" src="Images_Chevres/LogoGoatoutondre-removebg.png" width="200" height="200">
+        <span id="goatoutondre"> Goatoutondre </span>
+      </div>
 
+      <nav id="conteneur3">
+        <a>Accueil</a>
+        <a>A propos</a>
+        <a>Boutique</a>
+        <a>Trucs et Astuces</a>
+        <a>Contact</a>
+        <a>Mon Compte</a>
+        <a>Login</a>
+        <a><img src="Images_Chevres/pngegg (1).png" width="50"></a>
         <input type="search" name="search"><input type="submit" value="Rechercher">
+      </nav>
+
     </div>
-    </header>
-    <br>
-    <!-- REGLER LA TAILLE DE L'IMAGE -->
-    <img src="Chevre.jpg" alt="Chèvre blanche">
+  </header>  -->
+  <main>
+    <section class="galltext">
+      <div class="gallery">
+        <a data-fancybox="gallery" href="png">
+          <img src="" class="chevreImg" /> 
+        </a>
+      </div>
+      </div>
+      <div class="text">
+        <h1 class="chevreName"></h1>
+        <h2 class="chevrePrix"></h2>
+        <h4>Réservation</h4>
+        <input type="date" name="Réservation" id="reservation">
+        <input type="datetime-local" name="Réservation" id="retour">
 
-    <h2>Molly</h2>
+        <button class="ajouterChevre">Ajouter au panier</button>
+      </div>
+    </section>
 
-    <footer>
-        <ul class="list list-payment" role="list">
-            <img src="https://cdn.shopify.com/s/files/1/0686/6170/7065/files/4.png?v=1673635796" style="width:350px;">
-        </ul>
 
-<span id="cookieconsent:desc" class="cc-message">Le site utilise des cookies pour la gestion de vos commandes et pour
-    récolter des données en vue d'améliorer votre expérience utilisateur. <a aria-label="learn more about cookies"
-        role="button" tabindex="0" class="cc-link" href="" rel="noopener noreferrer nofollow" target="_blank">En savoir
-        plus</a></span>
-<!-- METTRE LE LIEN DE LA PAGE CGV DANS LES GUILLEMETS -->
-</footer>
 
+    <div class="description"> Description
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi amet doloremque perferendis quae totam repellat
+        tempore tenetur perspiciatis esse culpa unde voluptatibus optio autem eveniet debitis ipsam, a at. Unde?</p>
+    </div>
+
+    <div class="avisclients"> Avis clients
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi amet doloremque perferendis quae totam repellat
+        tempore tenetur perspiciatis esse culpa unde voluptatibus optio autem eveniet debitis ipsam, a at. Unde?
+      </p>
+    </div>
+
+    <div class="accessoires">Accessoires
+      <p>Craquez pour nos jolis accessoires de la gamme "Les animaux fantastiques" : 3 modèles aussi craquants les uns
+        que les autres : le noeuds papillion, la paire de solaire et le chapeau de paille!
+      </p>
+    </div>
+
+    <!-- pour alterner les couleurs des noeuds papillion c'est avec JS -->
+    <div class="containercard">
+    <div class="card1">
+      <img src="Accessoires/noeud-papillon-vert-capri-removebg-preview.png" id="noeud" alt="noeud papillon de couleur vert-capri">
+      <div class="cardbody">
+        <p class="card-text">Noeud papillion</p>
+        <select name="couleurs-noeuds" id="couleurnoeuds">
+          <option value="">--Choisissez votre couleur--</option>
+          <option value="0" class="noeudvert">Vert</option> 
+          <option value="1" class="noeudrose">Rose</option> 
+          <option value="2" class="noeudjaune">Jaune</option>
+        </select>
+        <button class="ajouterNoeud">Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card2">
+      <img src="" class="solaireImg" alt="Lunette de soleil margueritte">
+      <div class="cardbody">
+        <p class="card-text nomDeSolaire"></p>
+        <button class="ajouterSolaire">Ajouter au panier</button>
+      </div>
+    </div>
+
+
+    <div class="card3">
+      <img src="" class="chapeauImg" alt="Chapeau de paille">
+      <div class="cardbody">
+        <p class="card-text nomDeChapeau"></p>
+        <button class="ajouterChapeau">Ajouter au panier</button>
+      </div>
+    </div>
+</div>
+
+  </main>
+  <script src="../Assets/JS/produits.js"></script>
+  <script src="../Assets/JS/page.article.js"></script>
 
 </body>
 
-
 </html>
+
