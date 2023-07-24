@@ -48,3 +48,10 @@ function arrowNavigation(e){
   }
 
 }
+
+const textavis=document.getElementById("textavis")
+
+function vidange() {
+  textavis.value = "";
+}
+

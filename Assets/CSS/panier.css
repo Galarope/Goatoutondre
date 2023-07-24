@@ -1,0 +1,150 @@
+body {
+    box-sizing: content-box;
+}
+
+h3 {
+    text-align: center;
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.basket {
+    width: 70%;
+    margin: 0 auto; /* met un element en centre de son parent*/
+    padding: 10px;
+    background-color: rgb(234, 230, 230);
+    border-radius: 5px;
+}
+
+.list {
+    padding: 0;
+}
+
+.list .card {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.product {
+    width: 80%;
+    border: 1px solid blue;
+}
+
+.conteneur3 {
+    width: 50%;
+    margin: 0 auto;
+    color: rgb(8, 8, 8);
+}
+h2 {
+    text-align: center;
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+h1{
+        text-align: center;
+        width: 90%;
+        background-color: white;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 5px; 
+}
+a1 {
+    color: black;
+    text-align: LEFT;
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(134,157,94); ;
+}
+a{
+    
+    color:rgb(1, 9, 1);
+    
+}
+img {
+
+    color:black;
+    height: auto;
+  
+}
+
+#goatoutondre {
+    display:flex;
+    align-items:end;
+    align-content: end;
+    justify-content: flex-start;
+    padding-left: 50px;
+    font-family: 'wild';
+    font-size: 140px;
+    color: rgb(136, 173, 128);
+    text-shadow: 10px 10px 5px rgb(49, 49, 47);
+   
+}
+#conteneur2 {
+    display:flex;
+    justify-content:left;
+    align-items: center;
+    length: 350px;
+    width: 350px;
+    height: 350px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 0;
+    margin-top: -15px;
+    z-index: 0;
+}
+#footer {
+    display:flex;
+    flex-flow: column wrap;
+    text-align: left;
+    align-content: space-around;
+    padding-top: 20px;
+    line-height: 20px;
+    height:150px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background: rgb(134,157,94);
+    background: linear-gradient(90deg, rgba(134,157,94,1) 0%,  50%, rgba(134,157,94,1) 100%);
+}
+#livraison {
+    display:flex;
+    flex-direction: column;
+    text-align: start;
+}
+#camion {
+    height:50px;
+    width:50px;
+    margin-left:30px;
+   
+}
+
+#mpaiement {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: -10px;
+}
+#paypal {
+    margin-top:8px;
+    margin-left:10px;
+   width: 30%;
+}
+
+#reseaux {
+    display: flex;
+    flex-direction: column;
+width: 15%;
+}
+

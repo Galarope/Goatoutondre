@@ -133,6 +133,7 @@ a:hover {
 }
 
 body {
+
     margin-left: 50px;
     margin-right: 50px;
     background-color: rgb(247, 233, 212) !important;
@@ -190,8 +191,8 @@ body {
   text-align: center;
   font-family: "wild";
   font-size: 50px;
-  color:rgb(82, 97, 82);
-  text-shadow: 5px 5px 5px rgb(251, 245, 245);
+  color:rgb(136, 160, 136);
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 #newgoat2{
@@ -202,30 +203,50 @@ body {
 }
 
 
-#gislaine {
+#david {
+  border: 2px solid white;
+  border-radius: 30% 70% 32% 68% / 40% 30% 70% 60%;
+  box-shadow: 5px 5px 5px;
+  width: 400px;
+  height:600px;
+  order:3;
+}
+
+#adrien {
   border: 2px solid white;
   border-radius:40% 60% 25% 75% / 67% 24% 76% 33%;
   box-shadow: 5px 5px 5px;
   width: 400px;
-  height:600px;
+  height:460px;
+  order:3;
 }
 
-#damien {
+#romain {
   border: 2px solid white;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
   box-shadow: 5px 5px 5px;
   width: 400px;
   height:460px;
+  order:1;
 }
 
-/* .newgoatsimg {
+#section3 {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+#clientsavis {
+  font-family: "wild";
+  font-size: 50px;
+  color: rgb(136, 160, 136);
+  text-shadow: 5px 5px 5px black;
   
-  width: 400px;
-  height:460px;
-  border: 2px solid white;
- 
-} */
+}
 
+#totoro {
+  border: 2px solid rgb(253, 253, 253);
+  border-radius: 2%;
+  box-shadow: 2px 2px 15px rgb(0, 0, 0);
+}
 /* partie newsletter */
 
 *{
@@ -289,7 +310,7 @@ body {
   }
   
   .one  .heading{
-    color:rgb(136, 160, 136);
+    color:rgb(0, 0, 0);
     font-size:20px;
     font-weight:900;
     margin-top:40px;
@@ -414,6 +435,7 @@ body {
     font-size: 15px;
     color: rgb(0, 0, 0);
     background: rgb(219, 237, 170);
+    border: 1px solid white;
 }
 
 #livraison {

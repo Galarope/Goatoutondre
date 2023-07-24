@@ -14,8 +14,60 @@
     <header>
 
     </header>
-
+    <div class="modal">
+        <form class="paypal-form">
+            <div class="input-group">
+                        <div>
+                            <label for="paypal-email">Email</label>
+                            <input type="text" id="paypal-email" required/>
+                        </div>
+                        <div>
+                            <label for="paypal-password">Password:</label>
+                            <input type="text" id="paypal-password" required/>
+                        </div>
+                
+                        <div class="flex full-width">
+                            <div>
+                                <label for="paypal-region" class="mb-5">Region</label>
+                                    <select id="paypal-region">
+                                        <option>---Choisissez votre région---</option>
+                                        <option>
+                                            <option value="">Auvergne-Rhône-Alpes</option>
+                                            <option value="">Bourgogne-Franche-Comté</option>
+                                            <option value="">Bretagne</option>
+                                            <option value="">Centre-Val de Loire</option>
+                                            <option value="">Corse</option>
+                                            <option value="">Grand-Est</option>
+                                            <option value="">Guadeloupe</option>
+                                            <option value="">Guyane</option>
+                                            <option value="">Hauts-de-France</option>
+                                            <option value="">Île-de-France</option>
+                                            <option value="">La Réunion</option>
+                                            <option value="">Martinique</option>
+                                            <option value="">Mayotte</option>
+                                            <option value="">Normandie</option>
+                                            <option value="">Nouvelle-Aquitaine</option>
+                                            <option value="">Occitanie</option>
+                                            <option value="">Pays de la Loire</option>
+                                            <option value="">Provence-Alpes-Côte d'Azur</option>
+                                        </option>
+                                    </select>
+                        </div>
+                        <div >
+                            <label for="paypal-zipcode" class="mb-5">Code Postal</label>
+                            <input type="text" id="paypal-zipcode" pattern="[0-9]{5}" required/>
+                        </div>
+                        </div>
+                        <div class="validate-btn">
+                            <button type="submit">Valider</button>
+                        </div>
+                    </div>     
+                    
+                    <span class="close">X</span>
+        </form>        
+    </div>
     <main class="content">
+        
         <section class="basket">
 
             <h2>Votre panier</h2>
@@ -28,7 +80,7 @@
                         <div class="description">Lorem ipsum dolor sit</div>
                         <p>Prix</p>
                     </div>
-                    <span>X</span>
+                    <span class="close">X</span>
                 </li>
 
                 <li class="card">
@@ -38,7 +90,7 @@
                         <div class="description">Lorem ipsum dolor sit</div>
                         <p>Prix</p>
                     </div>
-                    <span>X</span>
+                    <span class="close">X</span>
                 </li>
 
                 <li class="card">
@@ -48,7 +100,7 @@
                         <div class="description">Lorem ipsum dolor sit</div>
                         <p>Prix</p>
                     </div>
-                    <span>X</span>
+                    <span class="close">X</span>
                 </li>
 
                 <li class="card">
@@ -58,7 +110,7 @@
                         <div class="description">Lorem ipsum dolor sit</div>
                         <p>Prix</p>
                     </div>
-                    <span>X</span>
+                    <span class="close">X</span>
                 </li>
             </ul>
 
@@ -163,6 +215,6 @@
     <footer>
 
     </footer>
-    <script src="./script.js"></script>
+    <script src="../Assets/JS/script-paiement.js"></script>
 </body>
 </html>
