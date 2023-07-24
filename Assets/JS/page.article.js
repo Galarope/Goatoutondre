@@ -19,12 +19,18 @@ let chevre = chevres.filter(chevre => chevre.id === chevreId)[0];
 
 chevreName.textContent = chevre.name;
 imgChevre.src = chevre.img;
+chevrePrix.textContent = chevre.prix + " €";
 
 let dateDeReservation = document.getElementById("reservation");
 let dateDeRetour = document.getElementById("retour");
 
-dateDeReservation.min = new Date().toLocaleString();
-console.log(dateDeReservation.min)
+let current = new Date();
+let minValue = current.toISOString().split("T")[0];
+let maxValue = new Date(current.setDate(current.getDate() + 30)).toISOString().split("T")[0];
+dateDeReservation.setAttribute("min", minValue);
+dateDeReservation.setAttribute("max", maxValue);
+dateDeRetour.setAttribute("min", minValue);
+dateDeRetour.setAttribute("max", maxValue);
 
 function ajouterChevre() {
     basket.produits.push(chevre)
