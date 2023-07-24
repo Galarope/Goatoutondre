@@ -158,7 +158,6 @@ a:hover {
    .mentionslegales {
       margin-top:30px;
       margin-bottom:30px;
-      margin-left:100px;
    }
 
    .dirigeants {
@@ -179,14 +178,6 @@ a:hover {
       margin-left:100px;
       display:flex;
       flex-direction: column;
-   }
-
-   #tableau1 {
-
-   }
-
-   #tableau2 {
-      
    }
 
    /* footer */
@@ -234,3 +225,31 @@ a:hover {
   }
   
   
+table{
+   text-align: center;
+   width: 80%;
+margin-left: auto;
+margin-right: auto;
+    color: black;
+    line-height: 30px;
+}
+
+td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h1{
+    text-align: center;
+}
+.product{
+    text-align: center;
+    background-color: gray;
+
+}
+body{
+    background-color: grey;
+}
+.product {
+    width: 80%;
+    border: 1px solid blue;
+}
