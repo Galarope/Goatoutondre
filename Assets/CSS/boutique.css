@@ -1,5 +1,6 @@
 body {
     background: rgb(246, 235, 190);
+    font-family: 'louisgc' !important;
 }
 
 
@@ -76,7 +77,8 @@ body {
   }
 
   .flip-card-back h1 {
-    padding-top: 25px;
+    padding-top: 50px;
+    padding: 30px;
   }
   
 .card-body {}

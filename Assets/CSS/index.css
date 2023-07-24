@@ -183,6 +183,7 @@ body {
     width:40%;
 }
 
+/* partie formateurs */
 #section2 {
   margin-left: 50px;
   margin-right: 50px; 
@@ -201,7 +202,6 @@ body {
   align-items: center;
 
 }
-
 
 #david {
   border: 2px solid white;
@@ -230,6 +230,7 @@ body {
   order:1;
 }
 
+/* partie avis clients */
 #section3 {
   margin-top: 50px;
   margin-left: 150px;
@@ -239,7 +240,6 @@ body {
   font-size: 50px;
   color: rgb(136, 160, 136);
   text-shadow: 5px 5px 5px black;
-  
 }
 
 #totoro {
@@ -247,8 +247,8 @@ body {
   border-radius: 2%;
   box-shadow: 2px 2px 15px rgb(0, 0, 0);
 }
-/* partie newsletter */
 
+/* partie newsletter */
 *{
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -260,7 +260,7 @@ body {
     justify-content: flex-end;
     width:420px !important;
     height:500px;
-    background:#fff;
+    background:#fdfdfd;
     margin:20px !important;
     margin-left: auto;
     padding:10px !important;
@@ -268,9 +268,9 @@ body {
     text-align:center;
     float: right;
     position:relative;
-    -moz-box-shadow: 0px 0px 28px rgba(0,0,0,.3);
-    -webkit-box-shadow: 0px 0px 28px rgba(0,0,0,.3);
-     box-shadow: 0px 0px 28px rgba(0,0,0,.3);
+    -moz-box-shadow: 2px 2px 15px rgb(0, 0, 0);
+    -webkit-box-shadow: 2px 2px 15px rgb(0, 0, 0);
+     box-shadow: 2px 2px 15px rgb(0, 0, 0);
      overflow:hidden;
   }
   
@@ -423,6 +423,30 @@ body {
     transform:rotate(-45deg);
   }
 
+  /* présentation team carousel */
+  #team {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width:100%;
+    font-family: 'wild';
+    font-size: 50px;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+    color: rgb(136, 160, 136);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-caption {
+    color: rgb(253, 253, 253) !important;
+}
+
+.carousel-caption d-none d-md-block {
+  font-size: 50px !important;
+}
+
 /* footer */
 #pieddepage {
     display:flex;
@@ -467,21 +491,3 @@ body {
     margin-top:5px;
 }
 
-#team {
-    display:flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    width:100%;
-    font-family: 'wild';
-    font-size: 50px;
-    text-shadow: 5px 5px 5px black;
-    text-align: center;
-    color: rgb(136, 160, 136);
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.carousel-caption {
-    font-size: 20px;
-}
