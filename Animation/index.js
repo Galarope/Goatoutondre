@@ -9,6 +9,7 @@ import InteractiveProgram from "./program/interactiveProgram.js";
 
 let squares = [];
 const playBtn = document.querySelector(".userMode");
+const body = document.querySelector("#body");
 const watchBotBtn = document.querySelector(".botMode");
 const scoreDisplay = document.querySelector(".score");
 const levelDisplay = document.querySelector(".currentLevel");
@@ -43,6 +44,8 @@ const controller = new Controller(commands, (c) =>
 );
 
 playBtn.addEventListener("click", () => {
+  body.setAttribute("class","overflow-hidden")
+  
   userMode = true;
 
   if (demoProgram.isRunning) demoProgram.exit();

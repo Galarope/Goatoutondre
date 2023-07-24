@@ -19,11 +19,23 @@
     src: url(../Assets/Fonts/Drawing\ Nature.ttf) format(truetype);
 }
 
+body {
+    font-family: "Louisgc";
+    box-sizing: content-box;
+    margin: 0;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
 /**/
+
 .container {
     width: 500px;
     margin: 0 auto;
     font-size: 22px;
+    padding-bottom: 20px;
 }
 
 .display, .btn-group {
@@ -147,4 +159,26 @@
    background-image: url("./assets/newGrass.png");
 }
 
+/**/
+.thankyou-card {
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 30px;
+}
+
+.content p {
+    font-size: 20px;
+}
 
