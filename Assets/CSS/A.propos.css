@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'woodyssey';
+    src: url(Fonts/WOODYSSEY.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'eacolo';
+    src: url(../Goatoutondre/Fonts/eacologica-round-slab-ffp.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Louisgc';
+    src: url(Fonts/LouisGeorgeCafe.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'wild';
+    src: url(../Goatoutondre/Fonts/Wild\ Nature.ttf) format(truetype);
+}
+
+
+
+
+#conteneur1 {
+    z-index: -1;
+}
+
+#conteneur2 {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 250px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'wild';
+    font-size: 250px;
+    color: rgb(116, 153, 109);
+    text-shadow: 3px 2px 2px #202b1f;
+    z-index: 0;
+
+}
+
+#conteneur3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid rgb(199, 226, 185);
+    border-radius: 10px 10px 10px 10px;
+    font-size: 30px;
+    color: darkgreen;
+    background: rgb(134,157,94);
+    background: linear-gradient(90deg, rgba(134,157,94,1) 0%, rgba(230,251,194,1) 35%, rgba(134,157,94,1) 100%);
+    z-index: 0;
+   
+}
+
+nav {
+    text-align: center;
+    font-size:50px;
+    font-family: 'Louisgc';
+}
+
+#logo {
+    width: 350px;
+    height:350px;
+}
+
+#goatoutondre {
+    display:flex;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+body {
+    background: rgb(246, 235, 190);
+}
+
+
+h1 {text-align: center;}
+#container2 {justify-content: space-around;
+    display: flex;}
+
+#container1 {display: inline-block; margin-top: 8%;}
+#texte{width: 50%;}
+
+#image{border-radius: %; border-width: 2cap; border-style: outset ; border-color: rgb(193, 238, 121);}

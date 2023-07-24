@@ -1,0 +1,222 @@
+
+@font-face {
+    font-family: 'Louisgc';
+    src: url(../Fonts/LouisGeorgeCafe.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Louisgcbold';
+    src: url(../Fonts/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'wild';
+    src: url(../Fonts/Wild\ Nature.ttf) format(truetype);
+}
+
+@font-face {
+    font-family:'nature';
+    src: url(../Fonts/Drawing\ Nature.ttf) format(truetype);
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(122, 147, 112);
+    }
+    
+* {
+    box-sizing: content-box;
+    font-family: 'louisgc';
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(247, 245, 245);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+input:focus {
+    outline: none;
+}
+/**/
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.form-field, .basket {
+    width: 49%;
+    background-color: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/**/
+/* Basket section */
+
+.basket {
+    position: sticky;
+}
+
+.basket .list {
+    padding: 0 20px;
+    overflow: auto;
+}
+
+
+/**/
+.card .product h3, p {
+    margin: 5px 0;
+}
+
+.list .card {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: 0.4s;
+}
+
+.list .card:hover {
+    background-color: rgb(213, 210, 210);
+}
+
+.list .card .product {
+    width: 75%;
+}
+
+.list .card .product-img {
+    margin-right: 10px;
+}
+
+/**/
+.input-group {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.input-group div {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+}
+
+.input-group input {
+    width: 56%;
+    border: none;
+    border-radius: 5px;
+}
+
+input.input-small {
+    width: 40%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex label {
+    display: block;
+    width: 100%;
+}
+
+.input-group .flex div {
+    width: 45%;
+}
+
+.flex .full-width div {
+    width: 50%;
+}
+
+i {
+    font-size: 20px;
+}
+
+.payment p {
+    margin: 0 0 5px 0;
+}
+
+div.icon-group {
+    margin-bottom: 0;
+}
+
+.form-field button {
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(251, 253, 254);
+    background-color: rgb(53, 53, 54);
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.validate-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/**/
+.paypal-payment .flex {
+    justify-content: center;
+}
+
+.paypal-payment .flex p {
+    font-size: 25px;
+    margin: 0 10px; 
+}
+
+.paypal-payment .flex .p-small {
+    font-size: 20px;
+}
+
+.paypal-payment .flex .strike-deco {
+    width: 130px;
+    padding-top: 13px;
+}
+
+.paypal-payment .flex .paypal-icon {
+    width: 64px;
+    margin: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

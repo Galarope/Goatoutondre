@@ -1,0 +1,6 @@
+menu {
+    display: flex;              /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    background-color: #ccc;     /* Ajout de la couleur d'arrière-plan */
+        list-style-type: none ;       /* Suppression des puces */
+    }
