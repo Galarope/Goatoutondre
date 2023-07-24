@@ -1,10 +1,6 @@
 body {
     background: rgb(246, 235, 190);
 }
-
-
-
-
 .containercard{
   display: flex;
   flex-wrap: wrap;
@@ -14,16 +10,24 @@ body {
   margin: 30px;
 }
 
+#reservation {background-color: rgb(248, 248, 253);
+  height: 30px;
+  width: 110px;
+  border-radius: 02px;}
 
-
+#retour{background-color: rgb(248, 248, 253);
+        height: 30px;
+        width: 110px;
+        border-radius: 02px;}
 
 
 .card1,
 .card2,
 .card3 {
    width: 25rem;
+   height: 25rem;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.853);
+  background-color: rgba(255, 255, 255, 0.571);
   border-radius: 15px;
    align-content: center;
   padding-top: 15px;
@@ -33,23 +37,17 @@ body {
 
 
 #noeud{
-width: 70%;
-height: 70%;
-padding-top: 10px;
+width: 13rem;
 }
 
 
 .solaireImg {
-width: 70%;
-height: 70%;
-padding-top: 10px;
+width: 13rem;
 }
 
 
 .chapeauImg {
-width: 70%;
-height: 70%;
-padding-top: 10px;
+  width: 13rem;
 }
 
 
@@ -62,15 +60,15 @@ label {
 select {
     font-size: 0.9rem;
     padding: 2px 5px;
+    margin-top: 25px;
 }
 
 
 
-button .ajouterChevre {box-shadow: 0 50px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.012);}
-button .ajouterSolaire {box-shadow: 0 50px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
-button .ajouterChapeau {box-shadow: 0 50px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
-button .ajouterNoeud {box-shadow: 0 50px 50px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
-
+button.ajouterChevre {margin-top: 10px; background-color: white; border-color:white; width: 140px; height: 40px; border-radius: 10px;}
+button.ajouterSolaire {background-color: white; border-color:white; width: 140px; height: 40px; border-radius: 10px;}
+button.ajouterChapeau {background-color: white; border-color:white; width: 140px; height: 40px; border-radius: 10px;}
+button.ajouterNoeud {background-color: white; border-color:white; width: 140px; height: 40px; border-radius: 10px;}
 
 
 
