@@ -1,4 +1,25 @@
 body {
+<<<<<<< HEAD
+    background: (247,263,212);
+    font-family: 'louisgc' !important;
+}
+
+#Infos{margin-top: 30px;
+  font-family: 'wild';
+  color: rgb(136, 160, 136);
+  text-shadow: 5px 5px 5px black;
+  font-size: 50px;
+  text-align: center;}
+
+.card{
+    margin: 20px;
+    /* background-color: rgba(194, 194, 194, 0.719);  */
+    background-color: rgba(255, 255, 255, 0.853);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    margin-left: 135px
+=======
   background: rgb(246, 235, 190);
   font-family: "louisgc" !important;
   box-sizing: content-box;
@@ -12,6 +33,7 @@ body {
   text-align: center;
   padding: 15px;
   margin-left: 110px;
+>>>>>>> 28b47d30e38cf430d2d3c1dfd4848d9a1f816327
 }
 
 #liste-chevres {
