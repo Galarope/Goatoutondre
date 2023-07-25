@@ -32,20 +32,21 @@
         </div>
     </header>
     <nav id="conteneur3">
-        <a href="index.html"><img src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
+        <a href="index.html"><img id="accueil" src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
                 height="35px"></a>
 
-        <a>A propos</a>
+        <a href="A.propos.html">A propos</a>
 
-        <a href="Boutique.html" title="Lien vers la boutique">Boutique</a>
+        <a href="Boutique.html" title="Lien vers al boutique">Boutique</a>
 
-        <a>Trucs et Astuces</a>
+        <a href="astuces.html">Trucs et Astuces</a>
 
         <a href="compte.html">Mon Compte</a>
 
-        <a>Login</a>
+        <a href="login.html">Login</a>
 
-        <a><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
+        <a href="panier.html"><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px"
+                height="40px"></a>
 
         <label id="searchbox1" for="site-search">
             <input type="search" id="site-search" name="q" placeholder="Tapez ici votre recherche">
@@ -54,7 +55,7 @@
         </label>
     </nav>
     <main>
-        <section id="section1">
+        <article id="section1">
             <article>
                 <div id="presentation">
                     <div id="mep">
@@ -72,34 +73,37 @@
                     </div>
                 </div>
             </article>
-        </section>
+        </article>
         <br />
-        <section id="section2">
-            
-                <p id="newgoat1">On vous presente nos trois nouvelles chevres qui rejoignent la team des brouteuses : David, Adrien et Romain !</p>
-            
+        <article id="section2">
+
+            <p id="newgoat1">On vous presente nos trois nouvelles chevres qui rejoignent la team des brouteuses : David,
+                Adrien et Romain !</p>
+
             <div id="newgoat2">
-                <img id="david" class="newgoatsimg" src="../Assets/Images/chevres/pexels-photo-14242077.jpeg">
-                <img id="adrien" class="newgoatsimg" src="../Assets/Images/chevres/adrien.jpg">
-                <img id="romain" class="newgoatsimg" src="../Assets/Images/chevres/pexels-photo-8821277.jpeg">
+                <img id="david" class="newgoatsimg" src="../Assets/Images/chevres/Images_Chevres/Chèvre n°8.jpeg">
+                <img id="adrien" class="newgoatsimg" src="../Assets/Images/chevres/Images_Chevres/Chèvre n°12.jpg">
+                <img id="romain" class="newgoatsimg" src="../Assets/Images/chevres/Images_Chevres/Chèvre n°9.jpeg">
             </div>
-        </section>
-        <section id="section3">
+        </article>
+        <article id="section3">
             <p id="clientsavis">Nos clients parlent de nous (en bien) :</p>
             <img id="totoro" src="../Assets/Images/img_avis_clients/image_avis_clients.png">
 
             <!-- partie newsletter -->
-            <section class="container">
+            <article class="container">
                 <section class="one">
                     <br />
                     <div class="logoo">
                         <img src="../Assets/Images/logos_icones/icons8-courriel-ouvert-64.png" width="70px"
                             height="70px">
-                    </div>
+                    </div><br />
+                    <br />
+
                     <h2 class="heading">
                         Restez au courant de nos nouveautés en vous abonnant à notre newsletter !
                     </h2>
-                    <br />
+
                     <form>
                         <input type='email' placeholder="saisir ici votre email"><br />
                         <button class="btn" role="button">
@@ -115,12 +119,12 @@
                     </div>
                 </section>
 
-            </section>
+            </article>
 
             <!-- partie presentation team -->
-            <section id="team"> Mais qui se cache derriere "GOATOUTONDRE"?
-                <article id="carousel">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+            <article id="team"> Mais qui se cache derriere "GOATOUTONDRE"?
+                <article id="carousel ">
+                    <div id="carouselExampleCaptions" class="carousel slide w-50 mx-auto" data-bs-ride="true">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -143,42 +147,42 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="../Assets/Images/avatars_equipe/lucky cat.png" width="400px" height="400px"
-                                    class="d-block w-100" alt="...">
+                                    class="" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Gaelle</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../Assets/Images/avatars_equipe/sleepy coffee.png" width="400px" height="400px" class="d-block w-100"
-                                    alt="...">
+                                <img src="../Assets/Images/avatars_equipe/sleepy coffee.png" width="400px"
+                                    height="400px" class="" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Tuong Nghi</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../Assets/Images/avatars_equipe/Avatar_Malika.png" width="400px" height="400px" class="d-block w-100"
-                                    alt="...">
+                                <img src="../Assets/Images/avatars_equipe/Avatar_Malika.png" width="400px"
+                                    height="400px" class="" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Malika</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../Assets/Images/chevres/pexels-photo-8821277.jpeg" width="400px" height="400px" class="d-block w-100"
-                                    alt="...">
+                                <img src="../Assets/Images/avatars_equipe/Neesty_2.png" width="400px"
+                                    height="400px" class="" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Vanessa</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../Assets/Images/avatars_equipe/avatarsansfond-removebg-preview.png" width="400px" height="400px" class="d-block w-100"
-                                    alt="...">
+                                <img src="../Assets/Images/avatars_equipe/avatarsansfond-removebg-preview.png"
+                                    width="400px" height="400px" class="" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Mathieu</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../Assets/Images/avatars_equipe/oh its you.png" width="400px" height="400px" class="d-block w-100"
-                                    alt="...">
+                                <img src="../Assets/Images/avatars_equipe/oh its you.png" width="400px" height="400px"
+                                    class="" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Luca</h5>
                                 </div>
@@ -196,15 +200,13 @@
                         </button>
                     </div>
                 </article>
-            </section>
+            </article>
     </main>
-
-
     <footer>
         <nav id="pieddepage">
             <a href="contact.html">Contact</a>
 
-            <a>FAQ</a>
+            <a href="FAQ.html">FAQ</a>
 
             <!-- page a developper si on a le temps, avec présentation de la nurserie -->
             <a href="partenaires.html">Nos partenaires</a>
@@ -213,7 +215,7 @@
 
             <a href="CGV..html">CGV</a>
 
-            <a>Politique de Confidentialité</a>
+            <a href="politiquedeconfidentialite.html">Politique de Confidentialité</a>
 
             <div id="mpaiement">
                 <img src="../Assets/Images/logos_icones/icons8-carte-bancaire-face-arrière-50.png">
@@ -227,7 +229,7 @@
             <div id="reseaux">
                 <a href="https://www.facebook.com/Goatoutondre-104168132751486"><img class="logoreseau"
                         src="../Assets/Images/logos_icones/icons8-facebook-50.png"></a>
-                <a href="..."><img class="logoreseau" src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
+                <a href="..."><img src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
             </div>
         </nav>
     </footer>

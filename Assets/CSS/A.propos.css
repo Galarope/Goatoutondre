@@ -5,20 +5,30 @@
 
 @font-face {
     font-family: 'eacolo';
-    src: url(../Goatoutondre/Fonts/eacologica-round-slab-ffp.ttf) format(truetype);
+    src: url(../Fonts/eacologica-round-slab-ffp.ttf) format(truetype);
 }
 
 @font-face {
     font-family: 'Louisgc';
-    src: url(Fonts/LouisGeorgeCafe.ttf) format(truetype);
+    src: url(../Fonts/LouisGeorgeCafe.ttf) format(truetype);
 }
 
 @font-face {
     font-family: 'wild';
-    src: url(../Goatoutondre/Fonts/Wild\ Nature.ttf) format(truetype);
+    src: url(..//Fonts/Wild\ Nature.ttf) format(truetype);
 }
 
+main{
+    display: flex; justify-content: space-between;
+}
 
+body{
+    margin: 0%;
+    overflow-x: hidden;
+    font-family: "Louisgc";
+    font-size: 120%;
+
+}
 
 
 #conteneur1 {
@@ -75,16 +85,28 @@ nav {
     margin-left: 20px;
 }
 
-body {
-    background: rgb(246, 235, 190);
-}
 
-
-h1 {text-align: center;}
+h1 {text-align: center; font-family: "wild"
+    ;font-size: px; text-align: center; color:#C89C63 !important}
 #container2 {justify-content: space-around;
     display: flex;}
+    
 
-#container1 {display: inline-block; margin-top: 8%;}
-#texte{width: 50%;}
+#container1 {
+  display: inline-block;
+  margin-top: 8%;
+}
 
 #image{border-radius: %; border-width: 2cap; border-style: outset ; border-color: rgb(193, 238, 121);}
+
+#texte{border-style: outset; border-color:rgb(193, 238, 121); padding-inline: 5%; background-color: #e6ec9094;}
+#texte {
+  width: 50%;
+}
+
+#image {
+  border-radius: %;
+  border-width: 2cap;
+  border-style: outset;
+  border-color: rgb(193, 238, 121);
+}

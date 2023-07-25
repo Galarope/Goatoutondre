@@ -4,77 +4,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Boutique</title>
   <link rel="stylesheet" href="../Assets/CSS/page.article.css">
-  <link rel="stylesheet" href="/Assets/CSS/contact.css">
+  <link rel="stylesheet" href="/Assets/CSS/headerFooter.css">
 
-<header>
-  <div id="header">
+  <header>
+    <div id="header">
       <div id="conteneur2">
-          <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png">
-          <span id="goatoutondre"> Goatoutondre </span>
-          <span id="alternative"> L'Alternative Écologique </span>
+        <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png">
+        <span id="goatoutondre"> Goatoutondre </span>
+        <span id="alternative"> L'Alternative Écologique </span>
       </div>
-  </div>
-</header>
+    </div>
+  </header>
 
-<nav id="conteneur3">
-  <a href="index.html"><img id="accueil" src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
-          height="35px"></a>
+  <nav id="conteneur3">
+    <a href="index.html"><img id="accueil" src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
+        height="35px"></a>
 
-  <a>A propos</a>
+    <a href="A.propos.html">A propos</a>
 
-  <a href="Boutique.html" title="Lien vers al boutique">Boutique</a>
+    <a href="Boutique.html" title="Lien vers al boutique">Boutique</a>
 
-  <a>Trucs et Astuces</a>
+    <a href="astuces.html">Trucs et Astuces</a>
 
-  <a href="compte.html">Mon Compte</a>
+    <a href="compte.html">Mon Compte</a>
 
-  <a>Login</a>
+    <a href="login.html">Login</a>
 
-  <a><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
+    <a href="panier.html"><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
 
-  <label id="searchbox1" for="site-search">
+    <label id="searchbox1" for="site-search">
       <input type="search" id="site-search" name="q" placeholder="Tapez ici votre recherche">
 
       <button id="search-button">Rechercher</button>
-  </label>
-</nav>
+    </label>
+  </nav>
 </head>
 
 <body>
-
-<!--
-  <header>
-    <div id="header">
-      <div id="conteneur1">
-        <source src="../Images/pexels-roman-odintsov-6666906 (2160p).mp4" type="video/mp4" width="50%">
-        </video>
-      </div>
-      <div id="conteneur2">
-        <img id="logo" src="Images_Chevres/LogoGoatoutondre-removebg.png" width="200" height="200">
-        <span id="goatoutondre"> Goatoutondre </span>
-      </div>
-
-      <nav id="conteneur3">
-        <a>Accueil</a>
-        <a>A propos</a>
-        <a>Boutique</a>
-        <a>Trucs et Astuces</a>
-        <a>Contact</a>
-        <a>Mon Compte</a>
-        <a>Login</a>
-        <a><img src="Images_Chevres/pngegg (1).png" width="50"></a>
-        <input type="search" name="search"><input type="submit" value="Rechercher">
-      </nav>
-
-    </div>
-  </header>  -->
   <main>
     <section class="galltext">
       <div class="gallery">
         <a data-fancybox="gallery" href="png">
-          <img src="" class="chevreImg" /> 
+          <img src="" class="chevreImg" />
         </a>
       </div>
       </div>
@@ -105,14 +78,14 @@
 
     <div class="accessoires">Accessoires
       <p>Craquez pour nos jolis accessoires de la gamme "Les animaux fantastiques" : 3 modèles aussi craquants les uns
-        que les autres : le noeuds papillion, la paire de solaire et le chapeau de paille!
+        que les autres : le noeuds papillon, la paire de solaire et le chapeau de paille!
       </p>
     </div>
 
-    <!-- pour alterner les couleurs des noeuds papillion c'est avec JS -->
+    <!-- pour alterner les couleurs des noeuds papillon c'est avec JS -->
     <div class="containercard">
     <div class="card1">
-      <img src="Accessoires/noeud-papillon-vert-capri-removebg-preview.png" id="noeud" alt="noeud papillon de couleur vert-capri">
+      <img src="../Assets/Images/accessoires/Accessoires/noeud-papillon-vert-capri-removebg-preview.png" id="noeud" alt="noeud papillon de couleur vert-capri">
       <div class="cardbody">
         <p class="card-text">Noeud papillion</p>
         <select name="couleurs-noeuds" id="couleurnoeuds">
@@ -123,31 +96,59 @@
         </select>
         <button class="ajouterNoeud">Ajouter au panier</button>
       </div>
-    </div>
 
-    <div class="card2">
-      <img src="" class="solaireImg" alt="Lunette de soleil margueritte">
-      <div class="cardbody">
-        <p class="card-text nomDeSolaire"></p>
-        <button class="ajouterSolaire">Ajouter au panier</button>
+      <div class="card2">
+        <img src="" class="solaireImg" alt="Lunette de soleil margueritte">
+        <div class="cardbody">
+          <p class="card-text nomDeSolaire"></p>
+          <button class="ajouterSolaire">Ajouter au panier</button>
+        </div>
+      </div>
+
+
+      <div class="card3">
+        <img src="" class="chapeauImg" alt="Chapeau de paille">
+        <div class="cardbody">
+          <p class="card-text nomDeChapeau"></p>
+          <button class="ajouterChapeau">Ajouter au panier</button>
+        </div>
       </div>
     </div>
-
-
-    <div class="card3">
-      <img src="" class="chapeauImg" alt="Chapeau de paille">
-      <div class="cardbody">
-        <p class="card-text nomDeChapeau"></p>
-        <button class="ajouterChapeau">Ajouter au panier</button>
-      </div>
-    </div>
-</div>
 
   </main>
+  <footer>
+    <nav id="pieddepage">
+      <a href="contact.html">Contact</a>
+
+      <a>FAQ</a>
+
+      <!-- page a developper si on a le temps, avec présentation de la nurserie -->
+      <a>Nos partenaires</a>
+
+      <a>Mentions Légales</a>
+
+      <a>CGV</a>
+
+      <a>Politique de Confidentialité</a>
+
+      <div id="mpaiement">
+        <img src="../Assets/Images/logos_icones/icons8-carte-bancaire-face-arrière-50.png">
+        <img id="paypal" src="../Assets/Images/logos_icones/icons8-paypal-50.png">
+      </div>
+      <div id="livraison">
+        <img id="camion" src="../Assets/Images/logos_icones/icons8-livraison-50.png">
+        Livraison sous 24h
+      </div>
+
+      <div id="reseaux">
+        <a href="https://www.facebook.com/Goatoutondre-104168132751486"><img class="logoreseau"
+            src="../Assets/Images/logos_icones/icons8-facebook-50.png"></a>
+        <a href="..."><img src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
+      </div>
+    </nav>
+  </footer>
   <script src="../Assets/JS/produits.js"></script>
   <script src="../Assets/JS/page.article.js"></script>
-
 </body>
 
 </html>
-
