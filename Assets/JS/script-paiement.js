@@ -1,10 +1,10 @@
 let basket = JSON.parse(localStorage.getItem("basket"));
 
 /**Script for popup modal*/
-const modal = document.getElementsByClassName("modal")[0];
+const modal = document.getElementsByClassName("cus-modal")[0];
 const paypalIcon = document.getElementsByClassName("paypal-icon")[0];
 const closeBtn = document
-  .getElementsByClassName("modal")[0]
+  .getElementsByClassName("cus-modal")[0]
   .getElementsByClassName("close")[0];
 
 paypalIcon.addEventListener("click", () => {
@@ -34,7 +34,7 @@ let ul = document.getElementsByClassName("list")[0];
 
 for (let product of products) {
   let card = document.createElement("li");
-  card.setAttribute("class", "card");
+  card.setAttribute("class", "cus-card");
 
   let img = document.createElement("img");
   img.setAttribute("class", "product-img");
@@ -72,3 +72,11 @@ for (let product of products) {
 
     ul.appendChild(card);
 }
+
+let reservationDateDisplay = document.getElementsByClassName("reservation-date")[0];
+let returnDateDisplay = document.getElementsByClassName("return-date")[0];
+let totalDisplay = document.getElementsByClassName("total")[0];
+
+reservationDateDisplay.textContent = "Date de Réservation: " + basket.dateDeReservation;
+returnDateDisplay.textContent = "Date de Retour: " + basket.dateDeRetour;
+totalDisplay.textContent = "Total: " + basket.total + " €";
