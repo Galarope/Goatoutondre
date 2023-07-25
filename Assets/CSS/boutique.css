@@ -1,9 +1,14 @@
 body {
-    background: rgb(246, 235, 190);
+    background: (247,263,212);
     font-family: 'louisgc' !important;
 }
 
-
+#Infos{margin-top: 30px;
+  font-family: 'wild';
+  color: rgb(136, 160, 136);
+  text-shadow: 5px 5px 5px black;
+  font-size: 50px;
+  text-align: center;}
 
 .card{
     margin: 20px;
@@ -12,7 +17,7 @@ body {
     border-radius: 15px;
     text-align: center;
     padding: 15px;
-    margin-left: 110px
+    margin-left: 135px
 }
 
 

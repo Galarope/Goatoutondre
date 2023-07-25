@@ -1,6 +1,14 @@
 body {
-    background: rgb(246, 235, 190);
+    background: (247,263,212);
 }
+
+.chevreName {margin-top: 30px;
+  font-family: 'wild';
+  color: rgb(136, 160, 136);
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
+  font-size:50px;}
+
 .containercard{
   display: flex;
   flex-wrap: wrap;
