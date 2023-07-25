@@ -13,7 +13,7 @@ if(!basket || Object.keys(basket).length === 0) {
     let produits = basket.produits;
     for (let produit of produits) {
       let li = document.createElement("li");
-      li.setAttribute("class", "card");
+      li.setAttribute("class", "card-product");
       let img = document.createElement("img");
       img.setAttribute("class", "product-img");
       let div = document.createElement("div");
