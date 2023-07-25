@@ -1,7 +1,21 @@
 body {
+<<<<<<< HEAD
+    background: (247,263,212);
+}
+
+.chevreName {margin-top: 30px;
+  font-family: 'wild';
+  color: rgb(136, 160, 136);
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
+  font-size:50px;}
+
+.containercard{
+=======
   background: rgb(246, 235, 190);
 }
 .containercard {
+>>>>>>> 28b47d30e38cf430d2d3c1dfd4848d9a1f816327
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
