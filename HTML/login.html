@@ -51,10 +51,11 @@
     <main>
         <div class="login-form">
             <h3>Login</h3>
-            <input class="champslog" type="text" name="username" placeholder="Email" />
+            <input id="logIn-email" class="champslog" type="text" name="email" placeholder="Email" />
             <br>
-            <input class="champslog" type="password" name="password" placeholder="Mot de Passe" />
+            <input id="logIn-password" class="champslog" type="password" name="password" placeholder="Mot de Passe" />
             <br>
+            <a href=""><p>Mot de passe oublié</p></a>
             <input class="btn" type="button" id="login" value="Login" />
 
             <!-- <input type="button" id="register" value="Register" /> -->
@@ -62,9 +63,10 @@
 
         <div class="login-form">
             <h3>Sign Up</h3>
-            <input class="champslog" type="text" name="email" placeholder="Email" />
+            <input id="signUp-username" class="champslog" type="text" name="username" placeholder="Username" />
+            <input id="signUp-email" class="champslog" type="text" name="email" placeholder="Email" />
             <br>
-            <input class="champslog" type="password" name="password" placeholder="Mot de Passe" />
+            <input id="signUp-password" class="champslog" type="password" name="password" placeholder="Mot de Passe" />
             <br>
             <!-- <input type="button" id="login" value="Login" /> -->
 
@@ -103,6 +105,8 @@
             </div>
         </nav>
     </footer>
+    <script src="../Assets/JS/user.js"></script>
+    <script src="../Assets/JS/auth.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
