@@ -20,7 +20,13 @@ h3 {
 }
 
 .list {
+<<<<<<< HEAD
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+=======
   padding: 0;
+>>>>>>> 443bd2bbe38a66bb381e8aa267efeea027607112
 }
 
 .list .card {
