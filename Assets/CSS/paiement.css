@@ -26,7 +26,7 @@
     font-family: 'louisgc';
 }
 
-.mb-5 {
+.cus-mb-5 {
     margin-bottom: 5px;
 }
 
@@ -85,7 +85,7 @@ input:focus {
 }
 
 /* Modal */
-.modal {
+.cus-modal {
     display: none;
     justify-content: center; 
     position: fixed; 
@@ -100,25 +100,30 @@ input:focus {
     background-color: rgba(0,0,0,0.4);
     transition: 0.3s;
 }
-.modal .close {
+.cus-modal .close {
     padding-right: 12px;
     padding-top: 5px;
 }
 
-.modal .paypal-form {
+.cus-modal .paypal-form {
     background-color: rgb(236, 236, 236);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 5px;
     width: 40%;
-    height: 200px;
+    height: 230px;
     padding-top: 10px;
     display: flex;
 }
 
-.modal .input-group {
+.cus-modal .cus-input-group {
     padding-top: 20px;
 }
 
+
+
+#paypal-region {
+    width: 90%;
+}
 /**/
 /* Basket section */
 
@@ -128,53 +133,56 @@ input:focus {
 
 .basket .list {
     padding: 0 20px;
+    height: 58%;
     overflow: auto;
 }
 
 
 /**/
-.card .product h3, p {
+.cus-card .product h3, p {
     margin: 5px 0;
 }
 
-.list .card {
+.list .cus-card {
     display: flex;
     padding: 10px;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     margin-bottom: 5px;
     transition: 0.4s;
 }
 
-.list .card:hover {
+.list .cus-card:hover {
     background-color: rgb(213, 210, 210);
 }
 
-.list .card .product {
+.list .cus-card .product {
     width: 75%;
 }
 
-.list .card .product-img {
+.list .cus-card .product-img {
     margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 /**/
-.input-group {
+.cus-input-group {
     width: 90%;
     margin: 0 auto;
 }
 
-.input-group div {
+.cus-input-group div {
     margin-bottom: 10px;
 }
 
-.input-group label {
+.cus-input-group label {
     display: inline-block;
     text-align: left;
     width: 40%;
 }
 
-.input-group input {
-    width: 56%;
+.cus-input-group input {
+    width: 56% !important; 
     border: none;
     border-radius: 5px;
 }
@@ -188,26 +196,26 @@ input.input-small {
     width: 100%;
  }
 
-.flex {
+.cus-flex {
     display: flex;
     justify-content: space-between;
 }
 
-.modal .flex {
+.cus-modal .cus-flex {
     justify-content: start;
 }
 
 
-.flex label {
+.cus-flex label {
     display: block;
     width: 100%;
 }
 
-.input-group .flex div {
+.cus-input-group .cus-flex div {
     width: 41%;
 }
 
-.flex .full-width div {
+.cus-flex .full-width div {
     width: 50%;
 }
 
@@ -240,32 +248,32 @@ div.icon-group {
 }
 
 /**/
-.paypal-payment .flex {
+.paypal-payment .cus-flex {
     justify-content: center;
 }
 
-.paypal-payment .flex p {
+.paypal-payment .cus-flex p {
     font-size: 25px;
     margin: 0 10px; 
 }
 
-.paypal-payment .flex .p-small {
+.paypal-payment .cus-flex .p-small {
     font-size: 20px;
 }
 
-.paypal-payment .flex .strike-deco {
+.paypal-payment .cus-flex .strike-deco {
     width: 130px;
     padding-top: 13px;
 }
 
-.paypal-payment .flex .paypal-icon {
+.paypal-payment .cus-flex .paypal-icon {
     width: 64px;
     margin: 15px 0;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.paypal-payment .flex .paypal-icon:hover {
+.paypal-payment .cus-flex .paypal-icon:hover {
     width: 66px;
 }
 
@@ -273,6 +281,24 @@ div.icon-group {
     margin-bottom: 0;
     margin-top: 15px;
 }
+
+/*info-reservation*/
+.info-reservation {
+    background-color: white;
+    height: 24%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.info-reservation .detail {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
 
 
 
