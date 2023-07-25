@@ -1,40 +1,17 @@
-@font-face {
-    font-family: 'woodyssey';
-    src: url(Fonts/WOODYSSEY.ttf) format(truetype);
-}
-
-@font-face {
-    font-family: 'eacolo';
-    src: url(../Fonts/eacologica-round-slab-ffp.ttf) format(truetype);
-}
-
-@font-face {
-    font-family: 'Louisgc';
-    src: url(../Fonts/LouisGeorgeCafe.ttf) format(truetype);
-}
-
-@font-face {
-    font-family: 'wild';
-    src: url(..//Fonts/Wild\ Nature.ttf) format(truetype);
-}
-
 main{
     display: flex; justify-content: space-between;
 }
 
-body{
-    margin: 0%;
-    overflow-x: hidden;
-    font-family: "Louisgc";
-    font-size: 120%;
-
+h1 { 
+    font-family: "wild";
+    ;font-size: 80px; text-align: center; color: #C89C63;
 }
 
-
-#conteneur1 {
-    z-index: -1;
+h3 { 
+    text-align: left;
 }
 
+<<<<<<< HEAD
 #conteneur2 {
     display:flex;
     justify-content:center;
@@ -90,3 +67,6 @@ h1{ font-family: "wild"
 h3{ text-align: left;}
 
 
+=======
+#cache{display:none;}
+>>>>>>> 33c116e0d083db989560dbed15b9795051fec899

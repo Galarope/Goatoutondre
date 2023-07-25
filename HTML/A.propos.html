@@ -4,39 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Goatoutondre </title>
+    <title> A propos </title>
     <link rel="stylesheet" href="../Assets/CSS/A.propos.css">
-   
+    <link rel="stylesheet" href="../Assets/CSS/headerFooter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </head>
 
+<body>
 <header>
-    <div id="header">
-        <div id="conteneur2">
-            <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png" width="200" height="200">
-            <span id="goatoutondre"> Goatoutondre </span>
+    <header>
+        <div id="header">
+            <div id="conteneur2">
+                <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png">
+                <span id="goatoutondre"> Goatoutondre </span>
+                <span id="alternative"> L'Alternative Écologique </span>
+            </div>
         </div>
+    </header>
+    <nav id="conteneur3">
+        <a href="index.html"><img id="accueil" src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
+                height="35px"></a>
 
-        <nav id="conteneur3">
-            <a href="index.html"><img src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px" height="35px"></a>
-            <a>A propos</a>
-            <a>Boutique</a>
-            <a>Trucs et Astuces</a>
-            <a>Contact</a>
-            <a>Mon Compte</a>
-            <a><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" alt=""></a>
-            
-            <label id="searchbox1" for="site-search"></label>
-            <input type="search" id="site-search"
-            name="q" placeholder="Tapez ici votre recherche">
+        <a href="A.propos.html">A propos</a>
+
+        <a href="Boutique.html" title="Lien vers al boutique">Boutique</a>
+
+        <a href="astuces.html">Trucs et Astuces</a>
+
+        <a href="compte.html">Mon Compte</a>
+
+        <a href="login.html">Login</a>
+
+        <a href="panier.html"><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
+
+        <label id="searchbox1" for="site-search">
+            <input type="search" id="site-search" name="q" placeholder="Tapez ici votre recherche">
 
             <button id="search-button">Rechercher</button>
         </label>
-        </nav>
+    </nav>
 
-    </div>
-
-
-<body>
     <div id="container1">
 
     </div>
@@ -62,11 +73,40 @@
             <h1>NOS PRESTATIONS</h1>
             <p> Demandez simplement une estimation gratuite, puis programmez-nous pour nettoyer vos propriétés. Nos services prévoient l’élimination des mauvaises herbes, y compris les espèces envahissantes gênantes, ainsi que l’enlèvement régulier des broussailles. Les chèvres peuvent atteindre des zones difficiles d’accès, telles que des collines, des pentes, des canyons ou d’autres zones plus difficiles. Cela rend les chèvres idéales pour ces travaux difficiles. De plus, les chèvres aiment le lierre de poison, le chêne de poison, la mûre, le rosier et le chardon.</p> 
             </div>
-        </div>
     </div>
+
+    <footer>
+        <nav id="pieddepage">
+            <a href="contact.html">Contact</a>
+
+            <a href="FAQ.html">FAQ</a>
+
+            <!-- page a developper si on a le temps, avec présentation de la nurserie -->
+            <a href="partenaires.html">Nos partenaires</a>
+
+            <a href="mentionlegales.html">Mentions Légales</a>
+
+            <a href="CGV..html">CGV</a>
+
+            <a href="politiquedeconfidentialite.html">Politique de Confidentialité</a>
+
+            <div id="mpaiement">
+                <img src="../Assets/Images/logos_icones/icons8-carte-bancaire-face-arrière-50.png">
+                <img id="paypal" src="../Assets/Images/logos_icones/icons8-paypal-50.png">
+            </div>
+            <div id="livraison">
+                <img id="camion" src="../Assets/Images/logos_icones/icons8-livraison-50.png">
+                Livraison sous 24h
+            </div>
+
+            <div id="reseaux">
+                <a href="https://www.facebook.com/Goatoutondre-104168132751486"><img class="logoreseau"
+                        src="../Assets/Images/logos_icones/icons8-facebook-50.png"></a>
+                <a href="..."><img src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
-<footer>
-    <nav></nav>
-</footer>
 
 </html>

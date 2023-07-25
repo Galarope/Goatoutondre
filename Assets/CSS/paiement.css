@@ -21,7 +21,13 @@
 
 * {
     margin: 0px;
-    padding:0px;
+    padding: 0px;
+    box-sizing: content-box;
+    font-family: 'louisgc';
+}
+
+.mb-5 {
+    margin-bottom: 5px;
 }
 
 a:link {
@@ -35,11 +41,6 @@ a:visited {
 
 a:hover {
     color: rgb(122, 147, 112);
-    }
-    
-* {
-    box-sizing: content-box;
-    font-family: 'louisgc';
 }
 
 h2 {
@@ -72,6 +73,50 @@ input:focus {
     width: 49%;
     background-color: rgb(236, 236, 236);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.close {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+   font-weight: 900; 
+}
+
+/* Modal */
+.modal {
+    display: none;
+    justify-content: center; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+.modal .close {
+    padding-right: 12px;
+    padding-top: 5px;
+}
+
+.modal .paypal-form {
+    background-color: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    width: 40%;
+    height: 200px;
+    padding-top: 10px;
+    display: flex;
+}
+
+.modal .input-group {
+    padding-top: 20px;
 }
 
 /**/
@@ -138,10 +183,20 @@ input.input-small {
     width: 40%;
 }
 
+#payment_cb_number, #payment_cb_name
+ {
+    width: 100%;
+ }
+
 .flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
+
+.modal .flex {
+    justify-content: start;
+}
+
 
 .flex label {
     display: block;
@@ -149,7 +204,7 @@ input.input-small {
 }
 
 .input-group .flex div {
-    width: 45%;
+    width: 41%;
 }
 
 .flex .full-width div {
@@ -168,7 +223,7 @@ div.icon-group {
     margin-bottom: 0;
 }
 
-.form-field button {
+.validate-btn button {
     padding: 10px;
     cursor: pointer;
     color: rgb(251, 253, 254);
@@ -206,7 +261,19 @@ div.icon-group {
 .paypal-payment .flex .paypal-icon {
     width: 64px;
     margin: 15px 0;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.paypal-payment .flex .paypal-icon:hover {
+    width: 66px;
+}
+
+.paypal-form .validate-btn {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
 
 
 

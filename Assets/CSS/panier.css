@@ -1,0 +1,82 @@
+body {
+  box-sizing: content-box;
+}
+
+h3 {
+  text-align: center;
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.basket {
+  width: 70%;
+  margin: 0 auto; /* met un element en centre de son parent*/
+  padding: 10px;
+  background-color: rgb(234, 230, 230);
+  border-radius: 5px;
+}
+
+.list {
+<<<<<<< HEAD
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+=======
+  padding: 0;
+>>>>>>> 443bd2bbe38a66bb381e8aa267efeea027607112
+}
+
+.list .card {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.product {
+  width: 80%;
+  border: 1px solid blue;
+}
+
+h2 {
+  text-align: center;
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+a1 {
+  color: black;
+  text-align: LEFT;
+  width: 90%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(134, 157, 94);
+}
+
+a {
+  color: rgb(1, 9, 1);
+}
+
+img {
+  color: black;
+  height: auto;
+}

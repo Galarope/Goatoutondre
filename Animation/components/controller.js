@@ -26,8 +26,10 @@ class Controller {
     activate() {
       return document.addEventListener("keyup", (e) => {
         e.preventDefault();
-        if(this.commands.hasOwnProperty(e.code))
+        e.stopPropagation();
+        if (this.commands.hasOwnProperty(e.code)) {
           this.notifyHandler(e.code);
+        }
       })
     }
 

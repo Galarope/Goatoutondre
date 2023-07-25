@@ -2,54 +2,169 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="Stylepagearticle.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique</title>
+  <link rel="stylesheet" href="../Assets/CSS/page.article.css">
+  <link rel="stylesheet" href="/Assets/CSS/headerFooter.css">
 
-</head>
-<div>
-
-    <header>
-        <img src="LOGO.png" alt="Logo Goatoutondre">
-
-        <h1>Goatoutondre</h1>
-        <h2>L'alternative écologique</h2>
-        <nav>
-            <ul class="menu">
-                <!-- Il manque les icônes acceuil, compte et panier -->
-                <li><a href>A propos</a></li>
-                <li><a href>Boutique</a></li>
-                <li><a href>Trucs & astuces</a></li>
-                <li><a href>Contact</a></li>
-                <li><a href>Mon compte</a></li>
-                <li><a href>Panier</a></li>
-            </ul>
-        </nav>
-
-        <input type="search" name="search"><input type="submit" value="Rechercher">
+  <header>
+    <div id="header">
+      <div id="conteneur2">
+        <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png">
+        <span id="goatoutondre"> Goatoutondre </span>
+        <span id="alternative"> L'Alternative Écologique </span>
+      </div>
     </div>
-    </header>
-    <br>
-    <!-- REGLER LA TAILLE DE L'IMAGE -->
-    <img src="Chevre.jpg" alt="Chèvre blanche">
+  </header>
 
-    <h2>Molly</h2>
+  <nav id="conteneur3">
+    <a href="index.html"><img id="accueil" src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
+        height="35px"></a>
 
-    <footer>
-        <ul class="list list-payment" role="list">
-            <img src="https://cdn.shopify.com/s/files/1/0686/6170/7065/files/4.png?v=1673635796" style="width:350px;">
-        </ul>
+    <a href="A.propos.html">A propos</a>
 
-<span id="cookieconsent:desc" class="cc-message">Le site utilise des cookies pour la gestion de vos commandes et pour
-    récolter des données en vue d'améliorer votre expérience utilisateur. <a aria-label="learn more about cookies"
-        role="button" tabindex="0" class="cc-link" href="" rel="noopener noreferrer nofollow" target="_blank">En savoir
-        plus</a></span>
-<!-- METTRE LE LIEN DE LA PAGE CGV DANS LES GUILLEMETS -->
-</footer>
+    <a href="Boutique.html" title="Lien vers al boutique">Boutique</a>
+
+    <a href="astuces.html">Trucs et Astuces</a>
+
+    <a href="compte.html">Mon Compte</a>
+
+    <a href="login.html">Login</a>
+
+    <a href="panier.html"><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
+
+    <label id="searchbox1" for="site-search">
+      <input type="search" id="site-search" name="q" placeholder="Tapez ici votre recherche">
+
+      <button id="search-button">Rechercher</button>
+    </label>
+  </nav>
+</head>
+
+<body>
+  <main>
+    <section class="galltext">
+      <div class="gallery">
+        <a data-fancybox="gallery" href="png">
+          <img src="" class="chevreImg" />
+        </a>
+      </div>
+      </div>
+      <div class="text">
+        <h1 class="chevreName"></h1>
+        <h2 class="chevrePrix"></h2>
+        <h4>Réservation</h4>
+        <input type="date" name="Réservation" id="reservation">
+        <input type="date" name="Réservation" id="retour">
+        <br>
+        <button class="ajouterChevre">Ajouter au panier</button>
+      </div>
+    </section>
 
 
+
+    <div class="description"> Description
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi amet doloremque perferendis quae totam repellat
+        tempore tenetur perspiciatis esse culpa unde voluptatibus optio autem eveniet debitis ipsam, a at. Unde?</p>
+    </div>
+
+    <div class="avisclients"> Avis clients
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi amet doloremque perferendis quae totam repellat
+        tempore tenetur perspiciatis esse culpa unde voluptatibus optio autem eveniet debitis ipsam, a at. Unde?
+      </p>
+    </div>
+
+    <div class="accessoires">Accessoires
+      <p>Craquez pour nos jolis accessoires de la gamme "Les animaux fantastiques" : 3 modèles aussi craquants les uns
+        que les autres : le noeuds papillon, la paire de solaire et le chapeau de paille!
+      </p>
+    </div>
+
+    <!-- pour alterner les couleurs des noeuds papillon c'est avec JS -->
+    <div class="containercard">
+<<<<<<< HEAD
+    <div class="card1">
+      <img src="../Assets/Images/accessoires/Accessoires/noeud-papillon-vert-capri-removebg-preview.png" id="noeud" alt="noeud papillon de couleur vert-capri">
+      <div class="cardbody">
+        <p class="card-text">Noeud papillion</p>
+        <select name="couleurs-noeuds" id="couleurnoeuds">
+          <option value="">--Choisissez votre couleur--</option>
+          <option value="0" class="noeudvert">Vert</option> 
+          <option value="1" class="noeudrose">Rose</option> 
+          <option value="2" class="noeudjaune">Jaune</option>
+        </select>
+        <button class="ajouterNoeud">Ajouter au panier</button>
+=======
+      <div class="card1">
+        <img src="Accessoires/noeud-papillon-vert-capri-removebg-preview.png" id="noeud"
+          alt="noeud papillon de couleur vert-capri">
+        <div class="cardbody">
+          <p class="card-text">Noeud papillon</p>
+          <select name="couleurs-noeuds" id="couleurnoeuds">
+            <option value="">--Choisissez votre couleur--</option>
+            <option value="0" class="noeudvert">Vert</option>
+            <option value="1" class="noeudrose">Rose</option>
+            <option value="2" class="noeudjaune">Jaune</option>
+          </select>
+          <button class="ajouterNoeud">Ajouter au panier</button>
+        </div>
+>>>>>>> 443bd2bbe38a66bb381e8aa267efeea027607112
+      </div>
+
+      <div class="card2">
+        <img src="" class="solaireImg" alt="Lunette de soleil margueritte">
+        <div class="cardbody">
+          <p class="card-text nomDeSolaire"></p>
+          <button class="ajouterSolaire">Ajouter au panier</button>
+        </div>
+      </div>
+
+
+      <div class="card3">
+        <img src="" class="chapeauImg" alt="Chapeau de paille">
+        <div class="cardbody">
+          <p class="card-text nomDeChapeau"></p>
+          <button class="ajouterChapeau">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <nav id="pieddepage">
+      <a href="contact.html">Contact</a>
+
+      <a>FAQ</a>
+
+      <!-- page a developper si on a le temps, avec présentation de la nurserie -->
+      <a>Nos partenaires</a>
+
+      <a>Mentions Légales</a>
+
+      <a>CGV</a>
+
+      <a>Politique de Confidentialité</a>
+
+      <div id="mpaiement">
+        <img src="../Assets/Images/logos_icones/icons8-carte-bancaire-face-arrière-50.png">
+        <img id="paypal" src="../Assets/Images/logos_icones/icons8-paypal-50.png">
+      </div>
+      <div id="livraison">
+        <img id="camion" src="../Assets/Images/logos_icones/icons8-livraison-50.png">
+        Livraison sous 24h
+      </div>
+
+      <div id="reseaux">
+        <a href="https://www.facebook.com/Goatoutondre-104168132751486"><img class="logoreseau"
+            src="../Assets/Images/logos_icones/icons8-facebook-50.png"></a>
+        <a href="..."><img src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
+      </div>
+    </nav>
+  </footer>
+  <script src="../Assets/JS/produits.js"></script>
+  <script src="../Assets/JS/page.article.js"></script>
 </body>
-
 
 </html>

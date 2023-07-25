@@ -87,14 +87,26 @@ nav {
 
 
 h1 {text-align: center; font-family: "wild"
-    ;font-size: px; text-align: center; color: #C89C63;}
+    ;font-size: px; text-align: center; color:#C89C63}
 #container2 {justify-content: space-around;
     display: flex;}
     
 
-#container1 {display: inline-block; margin-top: 8%;}
-#texte{width: 50%;}
+#container1 {
+  display: inline-block;
+  margin-top: 8%;
+}
 
 #image{border-radius: %; border-width: 2cap; border-style: outset ; border-color: rgb(193, 238, 121);}
 
 #texte{border-style: outset; border-color:rgb(193, 238, 121); padding-inline: 5%; background-color: #e6ec9094;}
+#texte {
+  width: 50%;
+}
+
+#image {
+  border-radius: %;
+  border-width: 2cap;
+  border-style: outset;
+  border-color: rgb(193, 238, 121);
+}
