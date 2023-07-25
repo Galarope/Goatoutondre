@@ -20,7 +20,7 @@ let chevres = [
     new Chevre (6,"../Assets/Images/chevres/Images_Chevres/Chèvre n°7.webp","Dan","Voir d'avantage",20),
     new Chevre (7,"../Assets/Images/chevres/Images_Chevres/Chèvre n°8.jpeg","David","Voir d'avantage",40),
     new Chevre (8,"../Assets/Images/chevres/Images_Chevres/Chèvre n°9.jpeg","Romain","Voir d'avantage",30),
-    new Chevre (9,"../Assets/Images/chevres/Images_Chevres/Chèvre n°10.jpeg","Lucas","Voir d'avantage",20),
+    new Chevre (9,"../Assets/Images/chevres/Images_Chevres/Chèvre n°10.jpeg","Luca","Voir d'avantage",20),
     new Chevre (10,"../Assets/Images/chevres/Images_Chevres/Chèvre n°11.jpeg","Gaëlle","Voir d'avantage",40),
     new Chevre (11,"../Assets/Images/chevres/Images_Chevres/Chèvre n°12.jpg","Adrien","Voir d'avantage",20),
 ]
