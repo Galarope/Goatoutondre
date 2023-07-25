@@ -87,7 +87,7 @@ nav {
 
 
 h1 {text-align: center; font-family: "wild"
-    ;font-size: px; text-align: center; color:#C89C63}
+    ;font-size: px; text-align: center; color:#C89C63 !important}
 #container2 {justify-content: space-around;
     display: flex;}
     

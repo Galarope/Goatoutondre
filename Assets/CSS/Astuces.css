@@ -159,9 +159,9 @@ h1{
     font-family: "wild" ;
     font-size: 90px; 
     text-align: center; 
-    color: #c89c63; margin-top: 4%;}
+    color: #c89c63 !important; margin-top: 4%;}
 
 h2{
     background-color: rgba(53, 94, 41, 0.918); 
-    color: rgb(247, 236, 189);}
+    color: rgb(172, 143, 63) !important;}
 

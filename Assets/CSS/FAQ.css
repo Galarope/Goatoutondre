@@ -3,15 +3,16 @@ main{
 }
 
 h1 { 
-    font-family: "wild";
-    ;font-size: 80px; text-align: center; color: #C89C63;
+    font-family: "wild"; 
+    font-size: 80px; 
+    text-align: center; 
+    color: #C89C63 !important;
 }
 
 h3 { 
     text-align: left;
 }
 
-<<<<<<< HEAD
 #conteneur2 {
     display:flex;
     justify-content:center;
@@ -67,6 +68,3 @@ h1{ font-family: "wild"
 h3{ text-align: left;}
 
 
-=======
-#cache{display:none;}
->>>>>>> 33c116e0d083db989560dbed15b9795051fec899
