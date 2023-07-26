@@ -1,15 +1,19 @@
 let ul = document.getElementsByClassName("list")[0];
+let basketDiv = document.getElementsByClassName("basket")[0];
+let main = document.getElementsByTagName("main")[0];
 let basket = JSON.parse(localStorage.getItem("basket"));
 /** */
-let alerte = document.createElement("li");
-alerte.setAttribute("class", "alerte")
-alerte.textContent = "Votre panier est vide"
+let alerte = document.getElementsByClassName("alert")[0];
 /** */
 // JSON.parse()
 // JSON.stringify()
 if(!basket || Object.keys(basket).length === 0) {
-    ul.appendChild(alerte);
+    main.removeChild(basketDiv);
+    alerte.style.display = "flex";
 } else {
+    if (alerte.style.display === "flex")
+        alerte.style.display === "none";
+    
     let produits = basket.produits;
     let index = 0;
     for (let produit of produits) {
@@ -54,13 +58,17 @@ if(!basket || Object.keys(basket).length === 0) {
 }
 
 let viderBtn = document.getElementsByClassName("viderBtn")[0];
+console.log(viderBtn)
 function viderPanier() {
     localStorage.removeItem("basket")
-    let newUl = document.createElement("ul");
-    newUl.appendChild(alerte);
+    // let newUl = document.createElement("ul");
+    // newUl.appendChild(alerte);
 
-    let container = document.getElementsByClassName("basket")[0];
-    container.replaceChild(newUl, ul);
+    // let container = document.getElementsByClassName("basket")[0];
+    // container.replaceChild(newUl, ul);
+    //main.removeChild(basketDiv);
+    console.log("main ", main)
+    alerte.style.display = "flex";
 };
 
 viderBtn.addEventListener("click", viderPanier);

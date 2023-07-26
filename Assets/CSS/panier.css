@@ -19,6 +19,24 @@ main {
   border-radius: 5px;
 } */
 
+.alert {
+  width: 70%;
+  margin: 15px auto; /* met un element en centre de son parent*/
+  padding: 0 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 160, 136);
+  border-radius: 15px;
+  background: linear-gradient(4deg, rgba(139,179,133,1) 0%, rgb(211, 232, 188) 51%, rgba(139,179,133,1) 100%);
+}
+
+.alert p {
+  
+  width: 50%;
+}
+
 .basket {
   width: 70%;
   margin: 15px auto; /* met un element en centre de son parent*/
