@@ -2,6 +2,14 @@ body {
   box-sizing: content-box;
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 78vh;
+  margin: 20px auto;
+}
+
 /* h3 {
   text-align: center;
   width: 90%;
@@ -10,13 +18,49 @@ body {
   padding: 10px;
   border-radius: 5px;
 } */
+/**/
+.info-reservation {
+    background-color: rgb(234, 230, 230);
+    width: 49%;
+    margin: 15px auto;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.info-reservation .detail {
+    width: 90%;
+    height: 30%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.btn-group {
+  width: 94%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+}
+/**/
 
 .basket {
-  width: 70%;
+  width: 49%;
   margin: 15px auto; /* met un element en centre de son parent*/
   padding: 10px;
   background-color: rgb(234, 230, 230);
   border-radius: 5px;
+}
+
+.basket .list {
+    padding: 0 20px;
+    height: 84%;
+    overflow: auto; 
 }
 
 .list {
@@ -24,7 +68,6 @@ body {
     margin: 10px 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 .list .card-product {
@@ -34,6 +77,7 @@ body {
   display: flex;
   width: 100%;
   background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   transition: 0.4s;
 }
 
@@ -52,12 +96,12 @@ body {
 
 h2 {
   text-align: center;
-    background-color: rgb(247, 245, 245);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    width: 90%;
-    margin: 10px auto;
-    border-radius: 5px;
-    padding: 10px;
+  background-color: rgb(247, 245, 245);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 h1 {
@@ -69,7 +113,7 @@ h1 {
   border-radius: 5px;
 }
 
-a1 {
+/* a1 {
   color: black;
   text-align: LEFT;
   width: 90%;
@@ -79,7 +123,8 @@ a1 {
   display: flex;
   justify-content: space-between;
   background-color: rgb(134, 157, 94);
-}
+} */
+
 
 a {
   color: rgb(1, 9, 1);
@@ -89,3 +134,7 @@ img {
   color: black;
   height: auto;
 }
+
+
+
+
