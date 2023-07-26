@@ -66,8 +66,8 @@ function viderPanier() {
 
     // let container = document.getElementsByClassName("basket")[0];
     // container.replaceChild(newUl, ul);
-    //main.removeChild(basketDiv);
-    console.log("main ", main)
+    main.removeChild(basketDiv);
+   
     alerte.style.display = "flex";
 };
 
