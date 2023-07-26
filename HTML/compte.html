@@ -34,9 +34,9 @@
 
     <a href="astuces.html">Trucs et Astuces</a>
 
-    <a href="compte.html">Mon Compte</a>
+    <a href="compte.html" id="linkToAccount">Mon Compte</a>
 
-    <a href="login.html">Login</a>
+    <a href="login.html" id="linkToLogin">Login</a>
 
     <a href="panier.html"><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
 
@@ -68,12 +68,20 @@
         <!--Profil-->
         <div id="infoscoordonnees">
           <!-- Afficher les coordonnées saisies lors de la création du compte client -->
-          <div id="identifiant">Identifiant :</div>
-          <div id="email">Email :</div>
-          <div id="password">Mot de Passe :</div>
+          <div id="skinId">Identifiant : <span id="identifiant"></span></div>
+          <div id="skinEmail">Email : <span id="email"></span></div>
+          <div id="skinMdp">Mot de Passe : <span>******</span></div>
+
+          <div id="telephone">Téléphone :</div>
+          <div id="formtelephone">
+            <textarea id="formtelinput" placeholder="Saisissez votre numéro de téléphone ici..." rows="1"
+              cols="50"></textarea><button id="savetelephone">Save</button>
+          </div>
+
           <div id="adresse">Adresse :</div>
           <div id="formadresse">
-            <textarea id="formadresseinput" placeholder="Saisissez votre adresse ici..." rows="5" cols="51"></textarea><button id="saveadresse">Enregistrer</button>
+            <textarea id="formadresseinput" placeholder="Saisissez votre adresse ici..." rows="2"
+              cols="50"></textarea><button id="saveadresse">Save</button>
           </div>
         </div>
       </div>
@@ -95,6 +103,7 @@
     </div>
 
     <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" class="tab-content">
+
       <!--Donner mon avis-->
       <div class="rate">
         <input type="radio" id="star5" name="rate" value="5" />
@@ -137,6 +146,7 @@
       </div>
     </div>
   </div>
+  </div>
 
   <footer>
     <nav id="pieddepage">
@@ -171,6 +181,7 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="../Assets/JS/compte.js"></script>
+  <script src="../Assets/JS/header.js"></script>
 </body>
 
 </html>

@@ -14,6 +14,10 @@ else basket = JSON.parse(basket);
 let queryString = window.location.search;
 let chevreId = new URLSearchParams(queryString).get("id");
 chevreId = parseInt(chevreId)
+/**let queryString = ...
+ * let userId = ....
+ * userId = parseInt(userId);
+ */
 
 let chevre = chevres.filter(chevre => chevre.id === chevreId)[0];
 

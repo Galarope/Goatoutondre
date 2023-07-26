@@ -1,3 +1,39 @@
+let utilisateur = localStorage.getItem("utilisateurs");
+let user = JSON.parse(utilisateur);
+
+if (!user) {
+  document.location.assign("login.html");
+}
+
+let identifiant = document.getElementById("identifiant");
+let email = document.getElementById("email");
+let formtelinput = document.getElementById("formtelinput");
+let savetelephone = document.getElementById("savetelephone");
+let formadresseinput = document.getElementById("formadresseinput");
+let saveadresse = document.getElementById("saveadresse");
+
+identifiant.innerText = user.name;
+email.innerText = user.email;
+formtelinput.value = user.telephone;
+formadresseinput.value = user.adresse;
+
+savetelephone.addEventListener("click", funcTel);
+saveadresse.addEventListener("click", funcAdresse);
+
+function funcTel() {
+  user = user ? user : {};
+  user['telephone'] = formtelinput.value;
+  localStorage.setItem('utilisateurs', JSON.stringify(user));
+}
+
+function funcAdresse() {
+  user = user ? user : {};
+  user['adresse'] = formadresseinput.value;
+  localStorage.setItem('utilisateurs', JSON.stringify(user));
+}
+
+// tableau a onglets
+
 const tabs = [...document.querySelectorAll(".tab")];
 
 tabs.forEach((tab) => tab.addEventListener("click", tabsAnimation));
@@ -53,34 +89,3 @@ const textavis = document.getElementById("textavis");
 function vidange() {
   textavis.value = "";
 }
-
-class InfosUser {
-  constructor(json) {
-    this.name = json.name;
-    this.email = json.email;
-    this.password = json.password;
-  }
-}
-
-let infosUser = new InfosUser(
-  JSON.parse(localStorage.getItem("utilisateurs"))[0]
-);
-let userName = infosUser.name;
-let userEmail = infosUser.email;
-let userPassword = infosUser.password;
-
-let identifiant = document.getElementById("identifiant");
-identifiant.innerText += " " + userName;
-let email = document.getElementById("email");
-email.innerText += " " + userEmail;
-let password = document.getElementById("password");
-password.innerText += " *********";
-
-function saveAdresse() {
-  let textAdresse = document.getElementById("formadresseinput");
-  infosUser.adress = textAdresse.value;
-  let address = document.getElementById("adresse");
-  address.innerText = "Adresse : " + infosUser.adress;
-}
-let saveBtn = document.getElementById("saveadresse");
-saveBtn.addEventListener("click", saveAdresse);
