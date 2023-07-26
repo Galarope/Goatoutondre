@@ -2,6 +2,14 @@ body {
   box-sizing: content-box;
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 78vh;
+  margin: 20px auto;
+}
+
 /* h3 {
   text-align: center;
   width: 90%;
@@ -11,12 +19,37 @@ body {
   border-radius: 5px;
 } */
 
+.alert {
+  width: 70%;
+  margin: 15px auto; /* met un element en centre de son parent*/
+  padding: 0 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 160, 136);
+  border-radius: 15px;
+  background: linear-gradient(4deg, rgba(139,179,133,1) 0%, rgb(211, 232, 188) 51%, rgba(139,179,133,1) 100%);
+}
+
+.alert p {
+  
+  width: 50%;
+}
+
 .basket {
   width: 70%;
   margin: 15px auto; /* met un element en centre de son parent*/
-  padding: 10px;
-  background-color: rgb(234, 230, 230);
-  border-radius: 5px;
+  padding: 0 20px;
+  background-color: rgb(136, 160, 136);
+  border-radius: 15px;
+  background: linear-gradient(4deg, rgba(139,179,133,1) 0%, rgb(211, 232, 188) 51%, rgba(139,179,133,1) 100%);
+}
+
+.basket .list {
+    padding: 0 20px;
+    height: 84%;
+    overflow: auto; 
 }
 
 .list {
@@ -29,6 +62,7 @@ body {
 
 .list .card-product {
   list-style: none;
+  border-radius: 15px;
   padding: 10px;
   margin-bottom: 5px;
   display: flex;
@@ -69,18 +103,6 @@ h1 {
   border-radius: 5px;
 }
 
-a1 {
-  color: black;
-  text-align: LEFT;
-  width: 90%;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(134, 157, 94);
-}
-
 a {
   color: rgb(1, 9, 1);
 }
@@ -89,3 +111,7 @@ img {
   color: black;
   height: auto;
 }
+
+
+
+
