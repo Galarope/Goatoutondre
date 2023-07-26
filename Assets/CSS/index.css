@@ -455,8 +455,7 @@ input[type="email"]:active:focus::-webkit-input-placeholder {
 }
 
 .carousel-caption {
-  color: chartreuse !important;
-  font-size: 500px !important;
+  color: rgb(134, 202, 67) !important;
 }
 
 .carousel-caption d-none d-md-block {

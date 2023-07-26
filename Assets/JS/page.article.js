@@ -14,6 +14,10 @@ else basket = JSON.parse(basket);
 let queryString = window.location.search;
 let chevreId = new URLSearchParams(queryString).get("id");
 chevreId = parseInt(chevreId)
+/**let queryString = ...
+ * let userId = ....
+ * userId = parseInt(userId);
+ */
 
 let chevre = chevres.filter(chevre => chevre.id === chevreId)[0];
 
@@ -33,22 +37,20 @@ dateDeRetour.setAttribute("min", minValue);
 dateDeRetour.setAttribute("max", maxValue);
 
 function ajouterChevre() {
-    basket.produits.push(chevre)
+    
+    if (dateDeReservation.value) chevre.setDateDeReservation( new Date(dateDeReservation.value));
+    if (dateDeRetour.value) chevre.setDateDeRetour(new Date(dateDeRetour.value));
+    chevre.calculateTotal();
 
-    if(dateDeReservation.value)
-        basket.dateDeReservation = new Date(dateDeReservation.value).toLocaleString();
-
-    if(dateDeRetour.value)
-        basket.dateDeRetour = new Date(dateDeRetour.value).toLocaleString();
-
-    const total = calculerLocation(chevre.prix, dateDeReservation.value, dateDeRetour.value);
-    basket.total += total;
+    basket.produits.push(chevre);
+          
+    // const total = calculerLocation(chevre.prix, dateDeReservation.value, dateDeRetour.value);
+    basket.total += chevre.total;
 
     localStorage.setItem("basket", JSON.stringify(basket))
 }
 
 ajouterChevreBtn.addEventListener("click", ajouterChevre);
-
 
 
 /**Noeuds */
@@ -62,7 +64,7 @@ function onChange() {
   
   switch (value) {
     case "0":
-        noeud.setAttribute("src",noeuds[0].img);
+        noeud.setAttribute("src", noeuds[0].img);
         break;
     case "1":
         noeud.setAttribute("src",noeuds[1].img);
@@ -80,6 +82,9 @@ onChange();
 
 function ajouterNoeud() {
     basket.produits.push(noeuds[couleurnoeuds.value]);
+    /**Ajouter le prix du noeud choisi au total */
+    basket.total += noeuds[couleurnoeuds.value].prix;
+    /** */
     localStorage.setItem("basket", JSON.stringify(basket))
 }
 
@@ -88,64 +93,57 @@ ajouterNoeudBtn.addEventListener("click", ajouterNoeud);
 /**Solaire */
 
 let solaireImg = document.getElementsByClassName("solaireImg")[0];
-let nomDeSolaire = document.getElementsByClassName("nomDeSolaire")[0];
-let ajouterSolaireBtn = document.getElementsByClassName("ajouterSolaire")[0];
+let nomDeSolaire = document.getElementsByClassName("nomDeSolaire")[1];
+let ajouterSolaireBtn = document.getElementsByClassName("ajouterSolaire")[1];
 
 let solaire = solaires[0];
 nomDeSolaire.textContent = solaire.name;
 solaireImg.src = solaire.img;
 
 
-function ajouterSolaire(){
-    basket.produits.push(solaire);
-    localStorage.setItem("basket", JSON.stringify(basket));
+function ajouterSolaire() {
+  basket.produits.push(solaire);
+  /**Ajouter le prix du solaire au total */
+  basket.total += solaire.prix;
+  localStorage.setItem("basket", JSON.stringify(basket));
 }
 ajouterSolaireBtn.addEventListener("click", ajouterSolaire)
 
 /**Chapeau */
 
 let chapeauImg = document.getElementsByClassName("chapeauImg")[0];
-let nomDeChapeau = document.getElementsByClassName("nomDeChapeau")[0];
-let ajouterChapeauBtn = document.getElementsByClassName("ajouterChapeau")[0];
+let nomDeChapeau = document.getElementsByClassName("nomDeChapeau")[1];
+let ajouterChapeauBtn = document.getElementsByClassName("ajouterChapeau")[1];
 
 let chapeau = chapeaux[0];
 nomDeChapeau.textContent = chapeau.name;
 chapeauImg.src = chapeau.img;
 
 function ajouterChapeau(){
-    basket.produits.push(chapeau);
-    localStorage.setItem("basket", JSON.stringify(basket));
+  basket.produits.push(chapeau);
+  /**Ajouter le prix du chapeau au total */
+  basket.total += chapeau.prix;
+  localStorage.setItem("basket", JSON.stringify(basket));
 }
 ajouterChapeauBtn.addEventListener("click", ajouterChapeau)
 
 
-
+// function calculerLocation(prixAchat, dateDeReservation, dateDeRetour) {
+//     let duree = new Date(dateDeRetour).getDate() - new Date(dateDeReservation).getDate();
+//     return duree * prixAchat;
+// }
 
 function calculerLocation(prixAchat, dateDeReservation, dateDeRetour) {
-    let duree = new Date(dateDeRetour).getDate() - new Date(dateDeReservation).getDate();
-    return duree * prixAchat;
+  dateDeReservation = new Date(dateDeReservation).getDate();
+    dateDeRetour = new Date(dateDeRetour).getDate();
+    console.log("dateDeReservation, " + dateDeReservation);
+    console.log("dateDeRetour, " + dateDeRetour)
+
+  if (dateDeRetour <= dateDeReservation) dateDeRetour += 30;
+
+  let duree = dateDeRetour - dateDeReservation;
+  return duree * prixAchat;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // pour le panier

@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boutique</title>
-  <link rel="stylesheet" href="../Assets/CSS/page.article.css">
   <link rel="stylesheet" href="/Assets/CSS/headerFooter.css">
+  <link rel="stylesheet" href="../Assets/CSS/page.article.css">
+</head>
+
+<body>
 
   <header>
     <div id="header">
@@ -28,9 +31,9 @@
 
     <a href="astuces.html">Trucs et Astuces</a>
 
-    <a href="compte.html">Mon Compte</a>
+    <a href="compte.html" id="linkToAccount">Mon Compte</a>
 
-    <a href="login.html">Login</a>
+    <a href="login.html" id="linkToLogin">Login</a>
 
     <a href="panier.html"><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
 
@@ -40,43 +43,39 @@
       <button id="search-button">Rechercher</button>
     </label>
   </nav>
-</head>
 
-<body>
   <main>
+
+   
+    <div class="gallery">
+      <img src="" class="chevreImg" />
     <section class="galltext">
-      <div class="gallery">
-        <a data-fancybox="gallery" href="png">
-          <img src="" class="chevreImg" />
-        </a>
-      </div>
-      </div>
-      <div class="text">
-        <h1 class="chevreName"></h1>
-        <h2 class="chevrePrix"></h2>
-        <h4>Réservation</h4>
+       <h1 class="chevreName"></h1>
+       <div class="text">
+        <h2 class="chevrePrix"></h2> <br>
+        <h4>Réservation</h4> <br>
         <input type="date" name="Réservation" id="reservation">
         <input type="date" name="Réservation" id="retour">
         <br>
         <button class="ajouterChevre">Ajouter au panier</button>
       </div>
-    </section>
+    </section> <br></div>
+    
 
 
 
-    <div class="description"> Description
+    <div class="description"> Description <br>
 
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi amet doloremque perferendis quae totam repellat
-        tempore tenetur perspiciatis esse culpa unde voluptatibus optio autem eveniet debitis ipsam, a at. Unde?</p>
-    </div>
+      <p>La chèvre mesure entre 80 et 100 cm, et pèse, selon ses origines, entre 15 et 80 kg. La chèvre adulte possède 32 dents. Et vit en moyenne 14 ans.</p>
+    </div> <br>
 
-    <div class="avisclients"> Avis clients
+    <!-- <div class="avisclients"> Avis clients
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi amet doloremque perferendis quae totam repellat
         tempore tenetur perspiciatis esse culpa unde voluptatibus optio autem eveniet debitis ipsam, a at. Unde?
       </p>
-    </div>
+    </div> -->
 
-    <div class="accessoires">Accessoires
+    <div class="accessoires">Accessoires <br>
       <p>Craquez pour nos jolis accessoires de la gamme "Les animaux fantastiques" : 3 modèles aussi craquants les uns
         que les autres : le noeuds papillon, la paire de solaire et le chapeau de paille!
       </p>
@@ -84,32 +83,41 @@
 
     <!-- pour alterner les couleurs des noeuds papillon c'est avec JS -->
     <div class="containercard">
-    <div class="card1">
-      <img src="../Assets/Images/accessoires/Accessoires/noeud-papillon-vert-capri-removebg-preview.png" id="noeud" alt="noeud papillon de couleur vert-capri">
-      <div class="cardbody">
-        <p class="card-text">Noeud papillion</p>
-        <select name="couleurs-noeuds" id="couleurnoeuds">
-          <option value="">--Choisissez votre couleur--</option>
-          <option value="0" class="noeudvert">Vert</option> 
-          <option value="1" class="noeudrose">Rose</option> 
-          <option value="2" class="noeudjaune">Jaune</option>
-        </select>
-        <button class="ajouterNoeud">Ajouter au panier</button>
+      <div class="card1">
+        <img src="" id="noeud" alt="noeud papillon de couleur vert-capri">
+        <div class="cardbody">
+          <p class="card-text">Noeud papillion</p><br>
+          <select name="couleurs-noeuds" id="couleurnoeuds">
+            <option value="">--Choisissez votre couleur--</option>
+            <option value="0" class="noeudvert">Vert</option>
+            <option value="1" class="noeudrose">Rose</option>
+            <option value="2" class="noeudjaune">Jaune</option>
+          </select>
+          <button class="ajouterNoeud">Ajouter au panier</button>
+        </div>
       </div>
 
       <div class="card2">
+        <div class="cardbody invisible">
+          <p class="card-text nomDeSolaire"></p>
+          <button class="ajouterSolaire">Ajouter au panier</button>
+        </div>
         <img src="" class="solaireImg" alt="Lunette de soleil margueritte">
         <div class="cardbody">
-          <p class="card-text nomDeSolaire"></p>
+          <p class="card-text nomDeSolaire"></p><br>
           <button class="ajouterSolaire">Ajouter au panier</button>
         </div>
       </div>
 
 
       <div class="card3">
+        <div class="cardbody invisible">
+          <p class="card-text nomDeChapeau"></p>
+          <button class="ajouterChapeau">Ajouter au panier</button>
+        </div>
         <img src="" class="chapeauImg" alt="Chapeau de paille">
         <div class="cardbody">
-          <p class="card-text nomDeChapeau"></p>
+          <p class="card-text nomDeChapeau"></p><br>
           <button class="ajouterChapeau">Ajouter au panier</button>
         </div>
       </div>
@@ -149,6 +157,7 @@
   </footer>
   <script src="../Assets/JS/produits.js"></script>
   <script src="../Assets/JS/page.article.js"></script>
+  <script src="../Assets/JS/header.js"></script>
 </body>
 
 </html>

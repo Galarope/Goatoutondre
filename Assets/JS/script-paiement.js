@@ -1,4 +1,4 @@
-let basket = JSON.parse(localStorage.getItem("basket"));
+
 
 /**Script for popup modal*/
 const modal = document.getElementsByClassName("cus-modal")[0];
@@ -19,20 +19,31 @@ window.addEventListener("click", (e) => {
   if (e.target === modal) modal.style.display = "none";
 });
 
+/** */
+let basket = JSON.parse(localStorage.getItem("basket"));
+let products = basket.produits;
+let ul = document.getElementsByClassName("list")[0];
+let dateDeReservation;
+let dateDeRetour;
+
 /**Navigation from payment*/
 const validateBtns = document.getElementsByClassName("validate-btn");
 
 for (let btn of validateBtns) {
   btn.addEventListener("click", () => {
-    document.location.href = "../../Goatoutondre/Animation/index.html";
+    localStorage.removeItem("basket");
+    document.location.href = "../Animation/index.html";
   });
 }
 /** */
 
-let products = basket.produits;
-let ul = document.getElementsByClassName("list")[0];
 
 for (let product of products) {
+  if (product.type === "chevre") {
+    dateDeReservation = product.dateDeReservation;
+    dateDeRetour = product.dateDeRetour;
+  }
+
   let card = document.createElement("li");
   card.setAttribute("class", "cus-card");
 
@@ -53,14 +64,14 @@ for (let product of products) {
   let p = document.createElement("p");
   p.setAttribute("class", "product-price");
 
-  let span = document.createElement("span");
-    span.setAttribute("class", "close");
+  // let span = document.createElement("span");
+  //   span.setAttribute("class", "close");
     
     img.src = product.img;
     h3.textContent = product.name;
     des.textContent = product.description ? product.description : " ";
     p.textContent = product.prix ? product.prix + " €" : 0 + " €";
-    span.textContent = "X";
+    // span.textContent = "X";
 
     productContainer.appendChild(h3);
     productContainer.appendChild(des);
@@ -68,7 +79,8 @@ for (let product of products) {
 
     card.appendChild(img);
     card.appendChild(productContainer);
-    card.appendChild(span);
+  
+    // card.appendChild(span);
 
     ul.appendChild(card);
 }
@@ -77,6 +89,10 @@ let reservationDateDisplay = document.getElementsByClassName("reservation-date")
 let returnDateDisplay = document.getElementsByClassName("return-date")[0];
 let totalDisplay = document.getElementsByClassName("total")[0];
 
-reservationDateDisplay.textContent = "Date de Réservation: " + basket.dateDeReservation;
-returnDateDisplay.textContent = "Date de Retour: " + basket.dateDeRetour;
+reservationDateDisplay.textContent =
+  "Date de Réservation: " +
+  new Date(dateDeReservation).toLocaleString().split(" ")[0];
+returnDateDisplay.textContent =
+  "Date de Retour: " +
+  new Date(dateDeRetour).toLocaleString().split(" ")[0];
 totalDisplay.textContent = "Total: " + basket.total + " €";

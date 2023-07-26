@@ -1,42 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Goat GPS</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body id="body">
-    <div class="thankyou-card">
-      <div class="content">
-        <h2>Merci pour votre commande !</h2>
-        <p>
-          Patience, votre chèvre arrive bientôt. En attendant, essayez de tondre
-          la pelouse ci-dessous avec un de nos plus sages chèvres !
-        </p>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Merci !</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="../Assets/CSS/headerFooter.css" rel="stylesheet">
+
+</head>
+<body id="body"></body>
+<header>
+  <div id="header">
+    <div id="conteneur2">
+      <img id="logo" src="../Assets/Images/logos_icones/Logosansbg.png">
+      <span id="goatoutondre"> Goatoutondre </span>
+      <span id="alternative"> L'Alternative Écologique </span>
+    </div>
+  </div>
+</header>
+<nav id="conteneur3">
+  <a href="index.html"><img id="accueil" src="../Assets/Images/logos_icones/logo_accueil-50px.png" width="35px"
+      height="35px"></a>
+
+  <a href="../HTML/A.propos.html">A propos</a>
+
+  <a href="../HTML/Boutique.html" title="Lien vers al boutique">Boutique</a>
+
+  <a href="../HTML/astuces.html">Trucs et Astuces</a>
+
+  <a href="../HTML/compte.html" id="linkToAccount">Mon Compte</a>
+
+  <a href="../HTML/login.html" id="linkToLogin">Login</a>
+
+  <a href="../HTML/panier.html"><img src="../Assets/Images/logos_icones/icone-chèvre3-64.png" width="40px" height="40px"></a>
+
+  <label id="searchbox1" for="site-search">
+    <input type="search" id="site-search" name="q" placeholder="Tapez ici votre recherche">
+
+    <button id="search-button">Rechercher</button>
+  </label>
+</nav>
+
+
+  <div class="thankyou-card">
+    <div class="content">
+      <h2>Merci pour votre commande :) </h2>
+      <p>
+        Patience, votre chèvre arrive bientôt. En attendant, essayez de tondre
+        la pelouse ci-dessous avec une de nos plus sages chèvres !
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="display">
+      <div class="scoreDisplay">
+        <p>Score:</p>
+        <p class="score"></p>
+      </div>
+      <div class="levelDisplay">
+        <p>Level:</p>
+        <p class="currentLevel"></p>
       </div>
     </div>
-    <div class="container">
-      <div class="display">
-        <div class="scoreDisplay">
-          <p>Score:</p>
-          <p class="score"></p>
-        </div>
-        <div class="levelDisplay">
-          <p>Level:</p>
-          <p class="currentLevel"></p>
-        </div>
-      </div>
-      <div class="grid"></div>
+    <div class="grid"></div>
 
-      <div class="btn-group">
-        <button class="userMode">Play</button>
-        <button class="botMode">Watch Bot</button>
-      </div>
+    <div class="btn-group">
+      <button class="userMode">Play</button>
+      <button class="botMode">Watch Bot</button>
     </div>
+  </div>
 
-    <script type="module" src="./index.js" async defer></script>
-  </body>
+  <footer>
+    <nav id="pieddepage">
+      <a href="contact.html">Contact</a>
+
+      <a href="FAQ.html">FAQ</a>
+
+      <!-- page a developper si on a le temps, avec présentation de la nurserie -->
+      <a href="partenaires.html">Nos partenaires</a>
+
+      <a href="mentionlegales.html">Mentions Légales</a>
+
+      <a href="CGV..html">CGV</a>
+
+      <a href="politiquedeconfidentialite.html">Politique de Confidentialité</a>
+
+      <div id="mpaiement">
+        <img src="../Assets/Images/logos_icones/icons8-carte-bancaire-face-arrière-50.png">
+        <img id="paypal" src="../Assets/Images/logos_icones/icons8-paypal-50.png">
+      </div>
+      <div id="livraison">
+        <img id="camion" src="../Assets/Images/logos_icones/icons8-livraison-50.png">
+        Livraison sous 24h
+      </div>
+
+      <div id="reseaux">
+        <a href="https://www.facebook.com/Goatoutondre-104168132751486"><img class="logoreseau"
+            src="../Assets/Images/logos_icones/icons8-facebook-50.png"></a>
+        <a href="..."><img src="../Assets/Images/logos_icones/icons8-instagram-50.png"></a>
+      </div>
+    </nav>
+  </footer>
+  <script src="../Assets/JS/header.js"></script>
+  <script type="module" src="./index.js" async defer></script>
+</body>
+
 </html>
