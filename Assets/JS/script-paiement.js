@@ -24,7 +24,7 @@ const validateBtns = document.getElementsByClassName("validate-btn");
 
 for (let btn of validateBtns) {
   btn.addEventListener("click", () => {
-    document.location.href = "../../Goatoutondre/Animation/index.html";
+    document.location.href = "../Animation/index.html";
   });
 }
 /** */

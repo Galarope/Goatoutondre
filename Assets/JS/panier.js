@@ -109,6 +109,6 @@ showmore: "Voir d'avantage"}
 
 let payerBtn = document.getElementsByClassName("payerBtn")[0];
 payerBtn.addEventListener("click", () => {
-    window.location.replace("../../../Goatoutondre/HTML/paiement.html");
+    window.location.replace("../HTML/paiement.html");
 })
 
