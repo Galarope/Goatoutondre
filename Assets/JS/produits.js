@@ -117,13 +117,13 @@ let chevres = [
 ];
 
 class Noeud {
-    constructor (id, img, name, prix){
-    this.id=id;
-    this.img=img;
-    this.name=name;
+  constructor(id, img, name, prix) {
+    this.id = id;
+    this.img = img;
+    this.name = name;
     this.prix = prix;
-        this.type = "accessoire"
-    }  
+    this.type = "accessoire";
+  }
 }
 
 let noeuds = [

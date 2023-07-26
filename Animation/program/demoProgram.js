@@ -25,7 +25,7 @@ class DemoProgram extends Program {
         this.squares[squareIndex].setStatus("newGrass");
         this.setGrass(squareIndex);
       }
-    }, 10000);
+    }, 5000);
   }
 
   setGrass(squareIndex) {
@@ -34,7 +34,7 @@ class DemoProgram extends Program {
 
     this.timeoutSessions[squareIndex] = setTimeout(() => {
       this.squares[squareIndex].setStatus("grass");
-    }, 5000);
+    }, 3000);
   }
 
   updateSquares() {
