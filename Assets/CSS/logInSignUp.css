@@ -92,11 +92,13 @@ main>div {
   cursor: pointer;
 } 
 
-.cus-modal .container {
-    background-color: white;
+.cus-modal .container { 
     width: 40%;
     height: 30%;
-    border-radius: 5px;
+    background: rgba(136, 160, 136, 0.678);
+    background: linear-gradient(90deg, rgba(137,180,129,1) 49%, rgba(208,237,203,1) 100%);
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #000000;
     display: flex;
     justify-content: space-between;
 }
@@ -107,4 +109,9 @@ main>div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.alert-content {
+    font-size: 20px;
+    font-weight: 800;
 }
