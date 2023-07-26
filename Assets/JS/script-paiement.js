@@ -19,20 +19,24 @@ window.addEventListener("click", (e) => {
   if (e.target === modal) modal.style.display = "none";
 });
 
-/**Navigation from payment*/
-const validateBtns = document.getElementsByClassName("validate-btn");
-
-for (let btn of validateBtns) {
-  btn.addEventListener("click", () => {
-    document.location.href = "../Animation/index.html";
-  });
-}
 /** */
 let basket = JSON.parse(localStorage.getItem("basket"));
 let products = basket.produits;
 let ul = document.getElementsByClassName("list")[0];
 let dateDeReservation;
 let dateDeRetour;
+
+/**Navigation from payment*/
+const validateBtns = document.getElementsByClassName("validate-btn");
+
+for (let btn of validateBtns) {
+  btn.addEventListener("click", () => {
+    localStorage.removeItem("basket");
+    document.location.href = "../Animation/index.html";
+  });
+}
+/** */
+
 
 for (let product of products) {
   if (product.type === "chevre") {
@@ -60,14 +64,14 @@ for (let product of products) {
   let p = document.createElement("p");
   p.setAttribute("class", "product-price");
 
-  let span = document.createElement("span");
-    span.setAttribute("class", "close");
+  // let span = document.createElement("span");
+  //   span.setAttribute("class", "close");
     
     img.src = product.img;
     h3.textContent = product.name;
     des.textContent = product.description ? product.description : " ";
     p.textContent = product.prix ? product.prix + " €" : 0 + " €";
-    span.textContent = "X";
+    // span.textContent = "X";
 
     productContainer.appendChild(h3);
     productContainer.appendChild(des);
@@ -75,7 +79,8 @@ for (let product of products) {
 
     card.appendChild(img);
     card.appendChild(productContainer);
-    card.appendChild(span);
+  
+    // card.appendChild(span);
 
     ul.appendChild(card);
 }

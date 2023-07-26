@@ -30,19 +30,91 @@ class Chevre {
 // ajouter description
 
 let chevres = [
-    new Chevre (0,"../Assets/Images/chevres/Images_Chevres/Chèvre n°1.jpeg","Emeline","Voir d'avantage",20),
-    new Chevre (1,"../Assets/Images/chevres/Images_Chevres/Chèvre n°2.jpeg","Kessy","Voir d'avantage",40),
-    new Chevre (2,"../Assets/Images/chevres/Images_Chevres/Chèvre n°3.jpeg","Mano","Voir d'avantage",20),
-    new Chevre (3,"../Assets/Images/chevres/Images_Chevres/Chèvre n°4.jpeg","Mathieu","Voir d'avantage",20),
-    new Chevre (4,"../Assets/Images/chevres/Images_Chevres/Chèvre n°5.jpeg","Hossein","Voir d'avantage",30),
-    new Chevre (5,"../Assets/Images/chevres/Images_Chevres/Chèvre n°6.jpeg","Alex","Voir d'avantage",40),
-    new Chevre (6,"../Assets/Images/chevres/Images_Chevres/Chèvre n°7.webp","Dan","Voir d'avantage",20),
-    new Chevre (7,"../Assets/Images/chevres/Images_Chevres/Chèvre n°8.jpeg","David","Voir d'avantage",40),
-    new Chevre (8,"../Assets/Images/chevres/Images_Chevres/Chèvre n°9.jpeg","Romain","Voir d'avantage",30),
-    new Chevre (9,"../Assets/Images/chevres/Images_Chevres/Chèvre n°10.jpeg","Luca","Voir d'avantage",20),
-    new Chevre (10,"../Assets/Images/chevres/Images_Chevres/Chèvre n°11.jpeg","Gaëlle","Voir d'avantage",40),
-    new Chevre (11,"../Assets/Images/chevres/Images_Chevres/Chèvre n°12.jpg","Adrien","Voir d'avantage",20),
-]
+  new Chevre(
+    0,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°1.jpeg",
+    "Emeline",
+    `../HTML/page.article.html?id=${0}`,
+    20
+  ),
+  new Chevre(
+    1,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°2.jpeg",
+    "Kessy",
+    `../HTML/page.article.html?id=${1}`,
+    40
+  ),
+  new Chevre(
+    2,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°3.jpeg",
+    "Mano",
+    `../HTML/page.article.html?id=${2}`,
+    20
+  ),
+  new Chevre(
+    3,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°4.jpeg",
+    "Mathieu",
+    `../HTML/page.article.html?id=${3}`,
+    20
+  ),
+  new Chevre(
+    4,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°5.jpeg",
+    "Hossein",
+    `../HTML/page.article.html?id=${4}`,
+    30
+  ),
+  new Chevre(
+    5,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°6.jpeg",
+    "Alex",
+    `../HTML/page.article.html?id=${5}`,
+    40
+  ),
+  new Chevre(
+    6,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°7.webp",
+    "Dan",
+    `../HTML/page.article.html?id=${6}`,
+    20
+  ),
+  new Chevre(
+    7,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°8.jpeg",
+    "David",
+    `../HTML/page.article.html?id=${7}`,
+    40
+  ),
+  new Chevre(
+    8,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°9.jpeg",
+    "Romain",
+    `../HTML/page.article.html?id=${8}`,
+    30
+  ),
+  new Chevre(
+    9,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°10.jpeg",
+    "Luca",
+    `../HTML/page.article.html?id=${9}`,
+    20
+  ),
+  new Chevre(
+    10,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°11.jpeg",
+    "Gaëlle",
+    `../HTML/page.article.html?id=${10}`,
+    40
+  ),
+  new Chevre(
+    11,
+    "../Assets/Images/chevres/Images_Chevres/Chèvre n°12.jpg",
+    "Adrien",
+    `../HTML/page.article.html?id=${11}`,
+    20
+  ),
+];
 
 class Noeud {
     constructor (id, img, name, prix){

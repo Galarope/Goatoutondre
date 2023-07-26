@@ -33,8 +33,10 @@ main {
 }
 
 .alert p {
-  
+  text-align: center;
   width: 50%;
+  font-weight: 800;
+  font-size: 30px;
 }
 
 .basket {

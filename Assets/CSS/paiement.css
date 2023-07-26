@@ -53,6 +53,7 @@ input:focus {
 .form-field,
 .basket {
   width: 49%;
+  max-height: 105vh;
   background-color: rgb(167, 236, 158);
   background: linear-gradient(
     4deg,
@@ -270,7 +271,7 @@ div.icon-group {
 /*info-reservation*/
 .info-reservation {
   background-color: rgb(247, 239, 227);
-  height: 24%;
+  height: 25%;
   width: 90%;
   margin: 0 auto;
   padding: 10px;
