@@ -1,4 +1,4 @@
-let basket = JSON.parse(localStorage.getItem("basket"));
+
 
 /**Script for popup modal*/
 const modal = document.getElementsByClassName("cus-modal")[0];
@@ -28,11 +28,18 @@ for (let btn of validateBtns) {
   });
 }
 /** */
-
+let basket = JSON.parse(localStorage.getItem("basket"));
 let products = basket.produits;
 let ul = document.getElementsByClassName("list")[0];
+let dateDeReservation;
+let dateDeRetour;
 
 for (let product of products) {
+  if (product.type === "chevre") {
+    dateDeReservation = product.dateDeReservation;
+    dateDeRetour = product.dateDeRetour;
+  }
+
   let card = document.createElement("li");
   card.setAttribute("class", "cus-card");
 
@@ -78,8 +85,9 @@ let returnDateDisplay = document.getElementsByClassName("return-date")[0];
 let totalDisplay = document.getElementsByClassName("total")[0];
 
 reservationDateDisplay.textContent =
-  "Date de Réservation: " + new Date(basket.dateDeReservation).toLocaleString().split(" ")[0];
+  "Date de Réservation: " +
+  new Date(dateDeReservation).toLocaleString().split(" ")[0];
 returnDateDisplay.textContent =
   "Date de Retour: " +
-  new Date(basket.dateDeRetour).toLocaleString().split(" ")[0];
+  new Date(dateDeRetour).toLocaleString().split(" ")[0];
 totalDisplay.textContent = "Total: " + basket.total + " €";

@@ -5,7 +5,26 @@ class Chevre {
         this.name=name;
         this.prix = prix;
         this.description = description;
-        this.showmore=showmore;
+        this.showmore = showmore;
+        this.type = "chevre";
+    }
+
+    setDateDeReservation(dateDeReservation) {
+        this.dateDeReservation = dateDeReservation;
+    }
+
+    setDateDeRetour(dateDeRetour) {
+        this.dateDeRetour = dateDeRetour;
+    }
+
+    calculateTotal() {
+        let oneDay = 1000 * 60 * 60 * 24;
+        let difference = Math.round(
+          this.dateDeRetour.getTime() - this.dateDeReservation.getTime()
+        );
+
+        let total = this.prix * (difference / oneDay);
+        this.total = total;
     }
 }
 // ajouter description
@@ -31,6 +50,7 @@ class Noeud {
     this.img=img;
     this.name=name;
     this.prix = prix;
+        this.type = "accessoire"
     }  
 }
 
@@ -47,6 +67,7 @@ class Solaire {
         this.img=img;
         this.name=name;
         this.prix = prix;   
+        this.type = "accessoire";
     }
 }
 
@@ -60,6 +81,7 @@ class Chapeau {
         this.img=img;
         this.name=name;
         this.prix = prix;
+        this.type = "accessoire";
     }
 
 }

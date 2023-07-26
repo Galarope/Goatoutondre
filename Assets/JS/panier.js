@@ -7,7 +7,7 @@ let alerte = document.getElementsByClassName("alert")[0];
 /** */
 // JSON.parse()
 // JSON.stringify()
-if(!basket || Object.keys(basket).length === 0) {
+if(!basket || basket.produits.length === 0) {
     main.removeChild(basketDiv);
     alerte.style.display = "flex";
 } else {
@@ -58,7 +58,7 @@ if(!basket || Object.keys(basket).length === 0) {
 }
 
 let viderBtn = document.getElementsByClassName("viderBtn")[0];
-console.log(viderBtn)
+
 function viderPanier() {
     localStorage.removeItem("basket")
     // let newUl = document.createElement("ul");

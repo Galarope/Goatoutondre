@@ -37,23 +37,20 @@ dateDeRetour.setAttribute("min", minValue);
 dateDeRetour.setAttribute("max", maxValue);
 
 function ajouterChevre() {
-    basket.produits.push(chevre)
+    
+    if (dateDeReservation.value) chevre.setDateDeReservation( new Date(dateDeReservation.value));
+    if (dateDeRetour.value) chevre.setDateDeRetour(new Date(dateDeRetour.value));
+    chevre.calculateTotal();
 
-    if (dateDeReservation.value)
-        basket.dateDeReservation = new Date(dateDeReservation.value);
-
-    if (dateDeRetour.value)
-        basket.dateDeRetour = new Date(dateDeRetour.value);
+    basket.produits.push(chevre);
           
-
-    const total = calculerLocation(chevre.prix, dateDeReservation.value, dateDeRetour.value);
-    basket.total += total;
+    // const total = calculerLocation(chevre.prix, dateDeReservation.value, dateDeRetour.value);
+    basket.total += chevre.total;
 
     localStorage.setItem("basket", JSON.stringify(basket))
 }
 
 ajouterChevreBtn.addEventListener("click", ajouterChevre);
-
 
 
 /**Noeuds */
@@ -67,7 +64,7 @@ function onChange() {
   
   switch (value) {
     case "0":
-        noeud.setAttribute("src",noeuds[0].img);
+        noeud.setAttribute("src", noeuds[0].img);
         break;
     case "1":
         noeud.setAttribute("src",noeuds[1].img);
@@ -85,6 +82,9 @@ onChange();
 
 function ajouterNoeud() {
     basket.produits.push(noeuds[couleurnoeuds.value]);
+    /**Ajouter le prix du noeud choisi au total */
+    basket.total += noeuds[couleurnoeuds.value].prix;
+    /** */
     localStorage.setItem("basket", JSON.stringify(basket))
 }
 
@@ -101,9 +101,11 @@ nomDeSolaire.textContent = solaire.name;
 solaireImg.src = solaire.img;
 
 
-function ajouterSolaire(){
-    basket.produits.push(solaire);
-    localStorage.setItem("basket", JSON.stringify(basket));
+function ajouterSolaire() {
+  basket.produits.push(solaire);
+  /**Ajouter le prix du solaire au total */
+  basket.total += solaire.prix;
+  localStorage.setItem("basket", JSON.stringify(basket));
 }
 ajouterSolaireBtn.addEventListener("click", ajouterSolaire)
 
@@ -118,8 +120,10 @@ nomDeChapeau.textContent = chapeau.name;
 chapeauImg.src = chapeau.img;
 
 function ajouterChapeau(){
-    basket.produits.push(chapeau);
-    localStorage.setItem("basket", JSON.stringify(basket));
+  basket.produits.push(chapeau);
+  /**Ajouter le prix du chapeau au total */
+  basket.total += chapeau.prix;
+  localStorage.setItem("basket", JSON.stringify(basket));
 }
 ajouterChapeauBtn.addEventListener("click", ajouterChapeau)
 
@@ -140,8 +144,6 @@ function calculerLocation(prixAchat, dateDeReservation, dateDeRetour) {
   let duree = dateDeRetour - dateDeReservation;
   return duree * prixAchat;
 }
-
-
 
 
 // pour le panier

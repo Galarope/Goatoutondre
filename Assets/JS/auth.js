@@ -5,9 +5,21 @@ let loginBtn = document.getElementById("login");
 
 let users = localStorage.getItem("utilisateurs");
 
+let modal = document.getElementsByClassName("cus-modal")[0];
+let alertContent = document.getElementsByClassName("alert-content")[0];
+let modalCloseBtn = document.getElementsByClassName("close")[0];
+
+modalCloseBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) modal.style.display = "none";
+});
+
 function login() {
     if (!users || users.length === 0)
-        return alert("Utilisateur Non Existe. Veuillez Registrer.");
+        popUp("Utilisateur Non Existe. Veuillez Registrer.");
     
     users = JSON.parse(users);
     console.log(users);
@@ -17,14 +29,21 @@ function login() {
     
     let index = users.findIndex(u => u.email === email);
     if (index === -1)
-        return alert("Email Incorrect");
+        popUp("Email Incorrect. Veuillez Réessayer.")
+        // return alert("Email Incorrect");
     
     let user = users[index];
     if (password !== user.password)
-        return alert("Mot de Passe Incorrect");
+        popUp("Mot De Passe Incorrect. Veuillez Réessayer.");
+        // return alert("Mot de Passe Incorrect");
     
     window.location.replace("../HTML/index.html?userId=" + user.id);
 
+}
+
+function popUp(content) {
+    alertContent.textContent = content;
+    modal.style.display = "flex";
 }
 
 loginBtn.addEventListener("click", login);
