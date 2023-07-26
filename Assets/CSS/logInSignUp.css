@@ -22,6 +22,10 @@ h3 {
     background: linear-gradient(90deg, rgba(137,180,129,1) 49%, rgba(208,237,203,1) 100%);
 }
 
+#loginform1 {
+    padding-top:45px;
+}
+
 .champslog {
     color: #000000;
     width: 70%;
