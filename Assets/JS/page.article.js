@@ -93,8 +93,8 @@ ajouterNoeudBtn.addEventListener("click", ajouterNoeud);
 /**Solaire */
 
 let solaireImg = document.getElementsByClassName("solaireImg")[0];
-let nomDeSolaire = document.getElementsByClassName("nomDeSolaire")[0];
-let ajouterSolaireBtn = document.getElementsByClassName("ajouterSolaire")[0];
+let nomDeSolaire = document.getElementsByClassName("nomDeSolaire")[1];
+let ajouterSolaireBtn = document.getElementsByClassName("ajouterSolaire")[1];
 
 let solaire = solaires[0];
 nomDeSolaire.textContent = solaire.name;
@@ -110,8 +110,8 @@ ajouterSolaireBtn.addEventListener("click", ajouterSolaire)
 /**Chapeau */
 
 let chapeauImg = document.getElementsByClassName("chapeauImg")[0];
-let nomDeChapeau = document.getElementsByClassName("nomDeChapeau")[0];
-let ajouterChapeauBtn = document.getElementsByClassName("ajouterChapeau")[0];
+let nomDeChapeau = document.getElementsByClassName("nomDeChapeau")[1];
+let ajouterChapeauBtn = document.getElementsByClassName("ajouterChapeau")[1];
 
 let chapeau = chapeaux[0];
 nomDeChapeau.textContent = chapeau.name;
@@ -140,25 +140,6 @@ function calculerLocation(prixAchat, dateDeReservation, dateDeRetour) {
   let duree = dateDeRetour - dateDeReservation;
   return duree * prixAchat;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

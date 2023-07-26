@@ -26,42 +26,45 @@ let chevres = [
 ]
 
 class Noeud {
-    constructor (id, img, name){
+    constructor (id, img, name, prix){
     this.id=id;
     this.img=img;
     this.name=name;
+    this.prix = prix;
     }  
 }
 
 let noeuds = [
 
-    new Noeud (0,"../Assets/Images/accessoires/Accessoires/noeud-papillon-vert-capri-removebg-preview.png","Noeud papillion vert"),
-    new Noeud (1, "../Assets/Images/accessoires/Accessoires/noeud-papillon-rose-removebg-preview.png", "Noeud papillion rose"),
-    new Noeud (2, "../Assets/Images/accessoires/Accessoires/noeud-papillon-jaune-removebg-preview.png", "Noeud papillion jaune"),
+    new Noeud (0,"../Assets/Images/accessoires/Accessoires/noeud-papillon-vert-capri-removebg-preview.png","Noeud papillion vert", 5),
+    new Noeud (1, "../Assets/Images/accessoires/Accessoires/noeud-papillon-rose-removebg-preview.png", "Noeud papillion rose", 6),
+    new Noeud (2, "../Assets/Images/accessoires/Accessoires/noeud-papillon-jaune-removebg-preview.png", "Noeud papillion jaune", 7),
 ]
 
 class Solaire {
-    constructor(id, img, name){
+    constructor(id, img, name, prix){
         this.id=id;
         this.img=img;
-        this.name=name;   
+        this.name=name;
+        this.prix = prix;   
     }
 }
 
 let solaires = [
-    new Solaire (3, "../Assets/Images/accessoires/Accessoires/Solaire1.png", "Lunette de soleil margueritte"),
+    new Solaire (3, "../Assets/Images/accessoires/Accessoires/Solaire1.png", "Lunette de soleil margueritte", 5),
 ]
    
 class Chapeau {
-    constructor(id, img, name){
+    constructor(id, img, name, prix){
         this.id=id;
         this.img=img;
         this.name=name;
+        this.prix = prix;
     }
 
 }
 
 let chapeaux = [
-    new Chapeau (4, "../Assets/Images/accessoires/Accessoires/chapeau_de_paille.png", "Chapeau de paille"),
+    new Chapeau (4, "../Assets/Images/accessoires/Accessoires/chapeau_de_paille.png", "Chapeau de paille", 5),
 ]
 

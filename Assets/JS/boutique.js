@@ -13,7 +13,7 @@ for (const chevre of chevres) {
                   </div>
                   <div class="flip-card-back">
                     <h1>${chevre.name}</h1>
-                    <a href="../HTML/page.article.html?id=${chevre.id}"><button>Voir davantage ...</button></a>
+                    <a href="../HTML/page.article.html?id=${chevre.id}"><button>Voir davantage</button></a>
                   </div>
                 </div>
               </div>

@@ -1,0 +1,32 @@
+
+    
+
+    /* contenu page */
+ 
+    #titrepage {
+       font-family: "wild";
+       font-size: 50px;
+       color:rgb(136, 160, 136);
+       text-shadow: 5px 5px 5px black;
+       text-align: center;
+       margin-top:30px !important;
+    }
+
+    #titreinfos{
+       font-family: "wild";
+       font-size: 45px;
+       color:rgb(147, 195, 147);
+       text-shadow: 5px 5px 5px black;
+    }
+ 
+    p {
+       margin-top:30px !important;
+       margin-bottom:30px;
+       margin-left:100px !important;
+       margin-right: 100px;
+
+    }
+ 
+
+ 
+ 
