@@ -47,9 +47,9 @@ function register() {
     if (index !== -1)
         return alert("Email est déjà utilisé.");
     
-    let user = new User(username, email, password);
+    let user = new User(username, email, password,"","");
     users.push(user);
-    localStorage.setItem("utilisateurs", JSON.stringify(users));
+    localStorage.setItem("utilisateurs", JSON.stringify(user));
 
     window.location.replace("../HTML/index.html?userId=" + user.id);
 };
