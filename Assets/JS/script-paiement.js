@@ -77,6 +77,9 @@ let reservationDateDisplay = document.getElementsByClassName("reservation-date")
 let returnDateDisplay = document.getElementsByClassName("return-date")[0];
 let totalDisplay = document.getElementsByClassName("total")[0];
 
-reservationDateDisplay.textContent = "Date de Réservation: " + basket.dateDeReservation;
-returnDateDisplay.textContent = "Date de Retour: " + basket.dateDeRetour;
+reservationDateDisplay.textContent =
+  "Date de Réservation: " + new Date(basket.dateDeReservation).toLocaleString().split(" ")[0];
+returnDateDisplay.textContent =
+  "Date de Retour: " +
+  new Date(basket.dateDeRetour).toLocaleString().split(" ")[0];
 totalDisplay.textContent = "Total: " + basket.total + " €";

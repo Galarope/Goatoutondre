@@ -131,9 +131,11 @@ ajouterChapeauBtn.addEventListener("click", ajouterChapeau)
 
 function calculerLocation(prixAchat, dateDeReservation, dateDeRetour) {
   dateDeReservation = new Date(dateDeReservation).getDate();
-  dateDeRetour = new Date(dateDeRetour).getDate();
+    dateDeRetour = new Date(dateDeRetour).getDate();
+    console.log("dateDeReservation, " + dateDeReservation);
+    console.log("dateDeRetour, " + dateDeRetour)
 
-  if (dateDeRetour < dateDeReservation) dateDeRetour += 30;
+  if (dateDeRetour <= dateDeReservation) dateDeRetour += 30;
 
   let duree = dateDeRetour - dateDeReservation;
   return duree * prixAchat;
