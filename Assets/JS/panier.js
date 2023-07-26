@@ -49,7 +49,7 @@ if(!basket || Object.keys(basket).length === 0) {
     }
 }
 
-let viderBtn = document.getElementsByClassName("vider-panier")[0];
+let viderBtn = document.getElementsByClassName("viderBtn")[0];
 function viderPanier() {
     localStorage.removeItem("basket")
     let newUl = document.createElement("ul");
@@ -61,7 +61,6 @@ function viderPanier() {
 
 viderBtn.addEventListener("click", viderPanier)
 
-
 /**
  * {id: 2
 img: "../Assets/Images/chevres/Images_Chevres/Chèvre n°3.jpeg"
@@ -69,3 +68,8 @@ name: "Mano"
 prix: 20
 showmore: "Voir d'avantage"}
  */
+
+let payerBtn = document.getElementsByClassName("payerBtn")[0];
+payerBtn.addEventListener("click", () => {
+    window.location.replace("../../../Goatoutondre/HTML/paiement.html");
+})

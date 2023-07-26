@@ -1,8 +1,5 @@
-let counter = 0;
-
 class User {
-    constructor(name, email, password,telephone,adresse) {
-        this.id = counter++;
+    constructor(name, email, password) {
         this.name = name;
         this.email = email;
         this.password = password;
