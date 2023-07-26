@@ -152,7 +152,7 @@ body {
     border-bottom: 2px solid black;
     width: 100%;
     margin-bottom: 30px;
-    margin-top:30px;
+    margin-top:30px !important;
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
