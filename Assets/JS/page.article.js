@@ -35,11 +35,12 @@ dateDeRetour.setAttribute("max", maxValue);
 function ajouterChevre() {
     basket.produits.push(chevre)
 
-    if(dateDeReservation.value)
-        basket.dateDeReservation = new Date(dateDeReservation.value).toLocaleString();
+    if (dateDeReservation.value)
+        basket.dateDeReservation = new Date(dateDeReservation.value);
 
-    if(dateDeRetour.value)
-        basket.dateDeRetour = new Date(dateDeRetour.value).toLocaleString();
+    if (dateDeRetour.value)
+        basket.dateDeRetour = new Date(dateDeRetour.value);
+          
 
     const total = calculerLocation(chevre.prix, dateDeReservation.value, dateDeRetour.value);
     basket.total += total;
@@ -119,11 +120,19 @@ function ajouterChapeau(){
 ajouterChapeauBtn.addEventListener("click", ajouterChapeau)
 
 
-
+// function calculerLocation(prixAchat, dateDeReservation, dateDeRetour) {
+//     let duree = new Date(dateDeRetour).getDate() - new Date(dateDeReservation).getDate();
+//     return duree * prixAchat;
+// }
 
 function calculerLocation(prixAchat, dateDeReservation, dateDeRetour) {
-    let duree = new Date(dateDeRetour).getDate() - new Date(dateDeReservation).getDate();
-    return duree * prixAchat;
+  dateDeReservation = new Date(dateDeReservation).getDate();
+  dateDeRetour = new Date(dateDeRetour).getDate();
+
+  if (dateDeRetour < dateDeReservation) dateDeRetour += 30;
+
+  let duree = dateDeRetour - dateDeReservation;
+  return duree * prixAchat;
 }
 
 
