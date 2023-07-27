@@ -85,7 +85,7 @@ main {
   margin-bottom: 5px;
   display: flex;
   width: 100%;
-  background-color: white;
+  background-color: rgb(227, 236, 211);
   transition: 0.4s;
   
 }
