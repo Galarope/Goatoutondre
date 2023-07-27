@@ -18,10 +18,10 @@ section {
 
 .photoschevres{
   border: 2px solid rgb(250, 250, 250);
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 5px 5px 5px rgb(255, 255, 255);
-  margin-right: 75px;
-  margin-left: 75px;
+  /*border-radius: 15px 15px 15px 15px;
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);*/
+  margin-right: 25px;
+  margin-left: 0px;
   margin-bottom: 25px;
 }
 
@@ -37,3 +37,10 @@ h2 {
   border-radius: 15px 15px 15px 15px;
   padding:12px;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
