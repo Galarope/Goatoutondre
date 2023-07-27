@@ -57,6 +57,7 @@ main {
   padding: 0 20px;
   height: 70%;
   overflow: auto;
+  
 }
 
 #boutons {
@@ -70,6 +71,7 @@ main {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  
 }
 
 .list .card-product {
@@ -81,10 +83,11 @@ main {
   width: 100%;
   background-color: white;
   transition: 0.4s;
+  
 }
 
 .list .card-product:hover {
-  background-color: rgb(213, 210, 210);
+  background-color: rgb(136,160,136);
 }
 
 .list .card-product .product-img {
