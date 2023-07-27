@@ -82,18 +82,22 @@ function removeItem(item) {
     basket = JSON.parse(basket);
     let produits = basket.produits;
     produits = [...produits.slice(0, id), ...produits.slice(id + 1)];
+    console.log("index: ", id)
 
-    let dateDeReservation = basket.dateDeReservation;
-    let dateDeRetour = basket.dateDeRetour;
-    // let total = 0;
+    let total = 0;
 
-    // for (let produit of produits)
-    //     if (produit.prix)
-    //         total += produit.prix;
+    for (let produit of produits) {
+        if (produit.type === "chevre")
+            total += produit.total;
+        else if (produit.prix) total += produit.prix;
+    }
+    const nodeArr = Array.from(ul.childNodes);
+    for (let i = id + 1; i < nodeArr.length; i++) {
+        nodeArr[i].setAttribute("id", i - 1);
+    }
     
-    // total = calculerLocation(total, dateDeReservation, dateDeRetour)
     basket.produits = produits;
-    // basket.total = total;
+    basket.total = total;
 
     localStorage.setItem("basket", JSON.stringify(basket));
 }
