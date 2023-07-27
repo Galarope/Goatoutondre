@@ -79,7 +79,12 @@ textarea {
 
   .tab {
   border: none;
-  background-color: rgb(136, 160, 136);
+  background: linear-gradient(
+    29deg,
+    rgba(116, 154, 110, 1) 0%,
+    rgba(220, 237, 188, 1) 82%,
+    rgba(116, 154, 110, 1) 100%
+  );
   color: #000000;
   flex-basis: 100%;
   display: flex;
@@ -89,6 +94,20 @@ textarea {
   font-weight: 700;
   padding: 30px 0;
   cursor: pointer;
+  }
+
+  #boutonSend {
+    border:2px solid white;
+    border-radius:10px;
+    background: linear-gradient(
+    29deg,
+    rgba(116, 154, 110, 1) 0%,
+    rgba(220, 237, 188, 1) 82%,
+    rgba(116, 154, 110, 1) 100%
+  );
+  margin-top:20px;
+  width:15%;
+
   }
 
   .tab:not(:nth-child(3), .tab.active-tab) {
@@ -176,7 +195,12 @@ padding-left:100px;
 }
 
 .modal-content {
-  background-color: rgb(238, 244, 224);
+  background: linear-gradient(
+    29deg,
+    rgba(116, 154, 110, 1) 0%,
+    rgba(220, 237, 188, 1) 82%,
+    rgba(116, 154, 110, 1) 100%
+  );
 }
 
 .modal-body {
