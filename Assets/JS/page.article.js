@@ -72,21 +72,26 @@ ajouterChevreBtn.addEventListener("click", ajouterChevre);
 // 
 let noeud = document.getElementById("noeud");
 let couleurnoeuds = document.getElementById("couleurnoeuds");
+let noeudPrix = document.querySelector(".noeudPrix");
 
 function onChange() {
   var value = couleurnoeuds.value;
   
   switch (value) {
     case "0":
+        noeudPrix.textContent = noeuds[0].prix + "€";
         noeud.setAttribute("src", noeuds[0].img);
         break;
     case "1":
+        noeudPrix.textContent = noeuds[1].prix + "€";
         noeud.setAttribute("src",noeuds[1].img);
         break;
     case "2":
+        noeudPrix.textContent = noeuds[2].prix + "€";
         noeud.setAttribute("src",noeuds[2].img);
         break;
     default:
+        noeudPrix.textContent = noeuds[0].prix + "€";
         noeud.setAttribute("src",noeuds[0].img);
         break;
   }

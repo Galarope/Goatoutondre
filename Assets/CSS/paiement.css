@@ -94,13 +94,19 @@ input:focus {
 }
 
 .cus-modal .paypal-form {
-  background-color: rgb(236, 236, 236);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border-radius: 5px;
+  
+  border-radius: 15px;
   width: 40%;
   height: 230px;
   padding-top: 10px;
   display: flex;
+  /* background-color: rgb(139, 177, 134); */
+  background: linear-gradient(
+    29deg,
+    rgba(116, 154, 110, 1) 0%,
+    rgba(220, 237, 188, 1) 82%,
+    rgba(116, 154, 110, 1) 100%
+  );
 }
 
 .cus-modal .cus-input-group {

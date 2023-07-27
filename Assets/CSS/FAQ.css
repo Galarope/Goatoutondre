@@ -60,8 +60,8 @@ h1 {
 
 .toggle-pannel{
     padding: 0px 15px;
-    /*  height: 0px;
-    opacity: 0;*/
+     height: 0px;
+    opacity: 0;
 }
 
 .toggle-pannel h3{
