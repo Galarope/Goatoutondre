@@ -135,6 +135,10 @@ p {
   margin: 5px 0;
 }
 
+.product-name {
+  font-weight: 800;
+}
+
 .list .cus-card {
   display: flex;
   padding: 10px;
