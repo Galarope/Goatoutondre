@@ -241,6 +241,10 @@ div.icon-group {
   /* border: none; */
 }
 
+.form-field .validate-btn button {
+  margin-bottom: 10px;
+}
+
 .validate-btn button:hover {
   background-color: rgb(215, 223, 199);
 }
