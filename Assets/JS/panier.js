@@ -30,6 +30,8 @@ if(!basket || basket.produits.length === 0) {
       des.setAttribute("class", "description");
       let p = document.createElement("p");
       p.setAttribute("class", "product-price");
+      let total = document.createElement("span");
+      total.setAttribute("class", "span-total");
       let span = document.createElement("span");
       span.setAttribute("class", "close");
 
@@ -40,7 +42,15 @@ if(!basket || basket.produits.length === 0) {
 
       h3.textContent = produit.name;
       des.textContent = produit.description ? produit.description : "";
+      
+
+      
       p.textContent = produit.prix ? produit.prix + " €" : 0 + " €";
+      if(produit.total) {
+        total.textContent = " -> " + produit.total + " €";
+        p.appendChild(total);
+      }
+        
       span.textContent = "X";
         
       span.addEventListener("click", () => removeItem(li));

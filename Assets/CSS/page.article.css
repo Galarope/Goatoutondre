@@ -111,6 +111,15 @@ select {
   margin-top: 5px;
 }
 
+.total {
+  display: none;
+}
+
+.text-deco {
+  text-decoration: underline;
+  
+}
+
 .select.noeud{}
 
 button.ajouterChevre {margin-top: 10px; background-color: white; border-color:white; width: 140px; height: 40px; border-radius: 10px;}

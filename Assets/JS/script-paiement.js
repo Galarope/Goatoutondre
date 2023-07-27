@@ -64,14 +64,17 @@ for (let product of products) {
   let p = document.createElement("p");
   p.setAttribute("class", "product-price");
 
-  // let span = document.createElement("span");
-  //   span.setAttribute("class", "close");
+  let total = document.createElement("span");
+      total.setAttribute("class", "span-total");
     
     img.src = product.img;
     h3.textContent = product.name;
     des.textContent = product.description ? product.description : " ";
     p.textContent = product.prix ? product.prix + " €" : 0 + " €";
-    // span.textContent = "X";
+    if(product.total) {
+      total.textContent = " -> " + product.total + " €";
+      p.appendChild(total);
+    }
 
     productContainer.appendChild(h3);
     productContainer.appendChild(des);
