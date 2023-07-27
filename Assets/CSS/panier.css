@@ -60,6 +60,10 @@ main {
   
 }
 
+.close {
+  cursor: pointer;
+}
+
 #boutons {
   display: flex;
   align-content: center;
@@ -96,7 +100,7 @@ main {
 }
 
 .product {
-  width: 75%;
+  width: 80%;
 }
 
 h2 {
@@ -135,4 +139,8 @@ img {
   background-color: rgb(205, 232, 200);
   box-shadow: 2px 2px 5px rgb(0, 0, 0) ;
   width : 300px;
+}
+
+.product-name {
+  font-weight: 800;
 }

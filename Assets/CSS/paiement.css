@@ -97,7 +97,7 @@ input:focus {
   
   border-radius: 15px;
   width: 40%;
-  height: 230px;
+  height: 250px;
   padding-top: 10px;
   display: flex;
   /* background-color: rgb(139, 177, 134); */
@@ -133,6 +133,10 @@ input:focus {
 .cus-card .product h3,
 p {
   margin: 5px 0;
+}
+
+.product-name {
+  font-weight: 800;
 }
 
 .list .cus-card {
@@ -230,7 +234,14 @@ div.icon-group {
   box-shadow: 2px 2px 5px black;
   font-size: 20px;
   border-radius: 5px;
+  padding: 8px;
+  width: 30%;
+  transition: 0.3s;
   /* border: none; */
+}
+
+.validate-btn button:hover {
+  background-color: rgb(215, 223, 199);
 }
 
 .validate-btn {
@@ -288,3 +299,9 @@ div.icon-group {
   width: 90%;
   margin: 0 auto;
 }
+
+.text-deco {
+  font-weight: 700;
+}
+
+

@@ -84,7 +84,8 @@ margin-right: 03px;
 
 
 #noeud{
-width: 13rem;
+width: 11rem;
+padding:90px;
 }
 
 
@@ -108,6 +109,15 @@ select {
   font-size: 0.9rem;
   padding: 2px 5px;
   margin-top: 5px;
+}
+
+.total {
+  display: none;
+}
+
+.text-deco {
+  text-decoration: underline;
+  
 }
 
 .select.noeud{}

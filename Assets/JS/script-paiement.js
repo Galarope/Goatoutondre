@@ -64,14 +64,17 @@ for (let product of products) {
   let p = document.createElement("p");
   p.setAttribute("class", "product-price");
 
-  // let span = document.createElement("span");
-  //   span.setAttribute("class", "close");
+  let total = document.createElement("span");
+      total.setAttribute("class", "span-total");
     
     img.src = product.img;
     h3.textContent = product.name;
     des.textContent = product.description ? product.description : " ";
     p.textContent = product.prix ? product.prix + " €" : 0 + " €";
-    // span.textContent = "X";
+    if(product.total) {
+      total.textContent = " -> " + product.total + " €";
+      p.appendChild(total);
+    }
 
     productContainer.appendChild(h3);
     productContainer.appendChild(des);
@@ -89,10 +92,24 @@ let reservationDateDisplay = document.getElementsByClassName("reservation-date")
 let returnDateDisplay = document.getElementsByClassName("return-date")[0];
 let totalDisplay = document.getElementsByClassName("total")[0];
 
-reservationDateDisplay.textContent =
-  "Date de Réservation: " +
+let spanReservationDate = document.createElement("span");
+  //spanReservationDate.setAttribute("class", "text-deco");
+let spanRetourDate = document.createElement("span");
+  //spanRetourDate.setAttribute("class", "text-deco");
+let spanTotal = document.createElement("span");
+  //spanTotal.setAttribute("class", "text-deco");
+
+spanReservationDate.textContent =
+  " " +
   new Date(dateDeReservation).toLocaleString().split(" ")[0];
-returnDateDisplay.textContent =
-  "Date de Retour: " +
+
+  reservationDateDisplay.appendChild(spanReservationDate);
+
+spanRetourDate.textContent =
+  " " +
   new Date(dateDeRetour).toLocaleString().split(" ")[0];
-totalDisplay.textContent = "Total: " + basket.total + " €";
+
+  returnDateDisplay.appendChild(spanRetourDate);
+
+spanTotal.textContent = " " + basket.total + " €";
+totalDisplay.appendChild(spanTotal);
