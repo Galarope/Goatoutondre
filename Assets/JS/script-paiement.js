@@ -92,10 +92,24 @@ let reservationDateDisplay = document.getElementsByClassName("reservation-date")
 let returnDateDisplay = document.getElementsByClassName("return-date")[0];
 let totalDisplay = document.getElementsByClassName("total")[0];
 
-reservationDateDisplay.textContent =
-  "Date de Réservation: " +
+let spanReservationDate = document.createElement("span");
+  //spanReservationDate.setAttribute("class", "text-deco");
+let spanRetourDate = document.createElement("span");
+  //spanRetourDate.setAttribute("class", "text-deco");
+let spanTotal = document.createElement("span");
+  //spanTotal.setAttribute("class", "text-deco");
+
+spanReservationDate.textContent =
+  " " +
   new Date(dateDeReservation).toLocaleString().split(" ")[0];
-returnDateDisplay.textContent =
-  "Date de Retour: " +
+
+  reservationDateDisplay.appendChild(spanReservationDate);
+
+spanRetourDate.textContent =
+  " " +
   new Date(dateDeRetour).toLocaleString().split(" ")[0];
-totalDisplay.textContent = "Total: " + basket.total + " €";
+
+  returnDateDisplay.appendChild(spanRetourDate);
+
+spanTotal.textContent = " " + basket.total + " €";
+totalDisplay.appendChild(spanTotal);
