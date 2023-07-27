@@ -3,6 +3,7 @@ let chevrePrix = document.getElementsByClassName("chevrePrix")[0];
 let imgChevre = document.getElementsByClassName("chevreImg")[0];
 let ajouterChevreBtn = document.getElementsByClassName("ajouterChevre")[0];
 let ajouterNoeudBtn = document.getElementsByClassName("ajouterNoeud")[0];
+let totalDisplay = document.getElementsByClassName("total")[0];
 
 
 let basket = localStorage.getItem("basket");
@@ -37,7 +38,12 @@ dateDeRetour.setAttribute("min", minValue);
 dateDeRetour.setAttribute("max", maxValue);
 
 function ajouterChevre() {
-    
+    if(chevre.total) {
+        basket.total -= chevre.total;
+        basket.produits.shift();
+    }
+        
+
     if (dateDeReservation.value) chevre.setDateDeReservation( new Date(dateDeReservation.value));
     if (dateDeRetour.value) chevre.setDateDeRetour(new Date(dateDeRetour.value));
     chevre.calculateTotal();
@@ -46,7 +52,15 @@ function ajouterChevre() {
           
     // const total = calculerLocation(chevre.prix, dateDeReservation.value, dateDeRetour.value);
     basket.total += chevre.total;
+    totalDisplay.style.display = "block";
 
+    if(document.querySelector(".span-total"))
+        totalDisplay.removeChild(document.querySelector(".span-total"));
+
+    let spanTotal = document.createElement("span");
+    spanTotal.setAttribute("class", "span-total")
+    spanTotal.textContent = " " + chevre.total + " €";
+    totalDisplay.appendChild(spanTotal);
     localStorage.setItem("basket", JSON.stringify(basket))
 }
 

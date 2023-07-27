@@ -59,6 +59,10 @@ main {
   overflow: auto;
 }
 
+.close {
+  cursor: pointer;
+}
+
 #boutons {
   display: flex;
   align-content: center;
