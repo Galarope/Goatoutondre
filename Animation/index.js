@@ -44,8 +44,12 @@ const controller = new Controller(commands, (c) =>
 );
 
 playBtn.addEventListener("click", () => {
-  body.setAttribute("class","overflow-hidden")
-  
+  // body.setAttribute("class","overflow-hidden")
+  window.addEventListener("keydown", function(e) {
+    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+}, false);
   userMode = true;
 
   if (demoProgram.isRunning) demoProgram.exit();

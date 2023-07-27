@@ -2,6 +2,14 @@ body {
   box-sizing: content-box;
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 78vh;
+  margin: 20px auto;
+}
+
 /* h3 {
   text-align: center;
   width: 90%;
@@ -11,24 +19,62 @@ body {
   border-radius: 5px;
 } */
 
+.alert {
+  width: 70%;
+  margin: 15px auto; /* met un element en centre de son parent*/
+  padding: 0 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 160, 136);
+  border-radius: 15px;
+  background: linear-gradient(4deg, rgba(139,179,133,1) 0%, rgb(211, 232, 188) 51%, rgba(139,179,133,1) 100%);
+}
+
+.alert p {
+  text-align: center;
+  width: 50%;
+  font-weight: 800;
+  font-size: 30px;
+}
+
 .basket {
   width: 70%;
   margin: 15px auto; /* met un element en centre de son parent*/
-  padding: 10px;
-  background-color: rgb(234, 230, 230);
-  border-radius: 5px;
+  padding: 0 20px;
+  background-color: rgb(136, 160, 136);
+  border-radius: 15px;
+  background: linear-gradient(
+    4deg,
+    rgba(139, 179, 133, 1) 0%,
+    rgb(211, 232, 188) 51%,
+    rgba(139, 179, 133, 1) 100%
+  );
 }
 
+.basket .list {
+  padding: 0 20px;
+  height: 70%;
+  overflow: auto;
+}
+
+#boutons {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
 .list {
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .list .card-product {
   list-style: none;
+  border-radius: 15px;
   padding: 10px;
   margin-bottom: 5px;
   display: flex;
@@ -51,13 +97,15 @@ body {
 }
 
 h2 {
+  font-family: "wild";
+  font-size: 50px;
   text-align: center;
-    background-color: rgb(247, 245, 245);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    width: 90%;
-    margin: 10px auto;
-    border-radius: 5px;
-    padding: 10px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  font-weight: lighter;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 h1 {
@@ -69,18 +117,6 @@ h1 {
   border-radius: 5px;
 }
 
-a1 {
-  color: black;
-  text-align: LEFT;
-  width: 90%;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(134, 157, 94);
-}
-
 a {
   color: rgb(1, 9, 1);
 }
@@ -88,4 +124,12 @@ a {
 img {
   color: black;
   height: auto;
+}
+
+.viderBtn, .payerBtn {
+  border:2px solid white;
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgb(205, 232, 200);
+  box-shadow: 2px 2px 5px rgb(0, 0, 0) ;
+  width : 300px;
 }

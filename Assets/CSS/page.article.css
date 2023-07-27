@@ -1,111 +1,119 @@
 body {
-  background: rgb(246, 235, 190);
+  background: (247,263,212);
 }
-.containercard {
-  display: flex;
-  flex-wrap: wrap;
+
+.chevreName {
+padding-top: 60px;
+line-height: 90px;
+font-family: 'wild';
+color: rgb(136, 160, 136);
+text-shadow: 5px 5px 5px black;
+font-size:50px;
+}
+
+
+
+.gallery{flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin-left: 60px;
+  margin-top: 40px;
+  border-radius: 8px;
+  display: flex;
   align-items: center;
-  margin: 30px;
+  line-height: 40px;}
+
+.galltext{margin-right: 400px;
+  font-size: larger;
+  }
+
+
+.description,
+.accessoires {margin-left: 93px;
+font-size: medium;
+line-height: 30px;
+padding-top: 9px;
+margin-right: 410px;}
+
+.containercard{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+margin: 30px;
+margin-right: 40px;
 }
 
-#reservation {
-  background-color: rgb(248, 248, 253);
-  height: 30px;
-  width: 110px;
-  border-radius: 2px;
-}
+#reservation {background-color: rgb(248, 248, 253);
+height: 30px;
+width: 110px;
+border-radius: 02px;}
 
-#retour {
-  background-color: rgb(248, 248, 253);
-  height: 30px;
-  width: 110px;
-  border-radius: 02px;
-}
+#retour{background-color: rgb(248, 248, 253);
+      height: 30px;
+      width: 110px;
+      border-radius: 02px;}
+
 
 .card1,
 .card2,
 .card3 {
-  width: 25rem;
-  height: 25rem;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.571);
-  border-radius: 15px;
-  align-content: center;
-  padding-top: 15px;
-  padding-top: 35px;
-  margin-left: 60px;
+ width: 25rem;
+ height: 25rem;
+padding: 10px;
+background-color: rgba(255, 255, 255, 0.571);
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+margin-left: 60px;
+text-align: center;
+margin-right: 03px;
 }
 
-#noeud {
-  width: 13rem;
+.card-text{
+  font-size: x-large;
+  padding-top: 10px;
 }
+
+.invisible{
+  visibility: hidden;
+}
+
+
+#noeud{
+width: 13rem;
+}
+
 
 .solaireImg {
-  width: 13rem;
+width: 15rem;
 }
 
+
 .chapeauImg {
-  width: 13rem;
+width: 13rem;
 }
+
 
 label {
   font-family: sans-serif;
   font-size: 1rem;
+  padding-right: 10px;
 }
 
 select {
   font-size: 0.9rem;
   padding: 2px 5px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
-button.ajouterChevre {
-  margin-top: 10px;
-  background-color: white;
-  border-color: white;
-  width: 140px;
-  height: 40px;
-  border-radius: 10px;
-}
-button.ajouterSolaire {
-  background-color: white;
-  border-color: white;
-  width: 140px;
-  height: 40px;
-  border-radius: 10px;
-}
-button.ajouterChapeau {
-  background-color: white;
-  border-color: white;
-  width: 140px;
-  height: 40px;
-  border-radius: 10px;
-}
-button.ajouterNoeud {
-  background-color: white;
-  border-color: white;
-  width: 140px;
-  height: 40px;
-  border-radius: 10px;
-}
+.select.noeud{}
 
-.img-zoom-container {
-  position: relative;
-}
+button.ajouterChevre {margin-top: 10px; background-color: white; border-color:white; width: 140px; height: 40px; border-radius: 10px;}
+button.ajouterSolaire {background-color: white; border-color:white; width: 140px; height: 40px; border-radius: 10px;}
+button.ajouterChapeau {background-color: white; border-color:white; width: 140px; height: 40px; border-radius: 10px;}
+button.ajouterNoeud {background-color: white; border-color:white; width: 140px; height: 40px; border-radius: 10px;}
 
-.img-zoom-lens {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  /*définissez la taille de la lentille:*/
-  width: 40px;
-  height: 40px;
-}
-
-.img-zoom-result {
-  border: 1px solid #d4d4d4;
-  /*définissez la taille du résultat DIV:*/
-  width: 300px;
-  height: 300px;
-}

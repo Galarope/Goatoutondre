@@ -1,18 +1,22 @@
 body {
-  background: rgb(246, 235, 190);
-  font-family: "louisgc" !important;
-  box-sizing: content-box;
+    background: (247,263,212);
+    font-family: 'louisgc' !important;
 }
 
-.card {
-  margin: 20px;
-  /* background-color: rgba(194, 194, 194, 0.719);  */
-  background-color: rgba(255, 255, 255, 0.853);
-  border-radius: 15px;
-  text-align: center;
-  padding: 15px;
-  margin-left: 110px;
-}
+#Infos{margin-top: 30px;
+  font-family: 'wild';
+  color: rgb(136, 160, 136);
+  text-shadow: 5px 5px 5px black;
+  font-size: 50px;
+  text-align: center;}
+
+.card{
+    margin: 20px;
+    background-color: rgba(194, 194, 194, 0.719);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    margin-left: 110px}
 
 #liste-chevres {
   display: flex;
@@ -64,20 +68,20 @@ body {
   background-color: rgba(66, 98, 80, 0.905);
   font-size: large;
   color: white;
-  padding-top: 10px;
+  padding-top: 40px;
   transform: rotateY(180deg);
 }
 
 .flip-card-back h1 {
   padding-top: 50px;
-  padding: 30px;
+  padding: 10px;
 }
 
-/* .card-body {}
+.card-body {}
 
 .card-title{}
 
-.card-text{} */
+.card-text{} 
 
 .voir-davantage {
   color: white;
