@@ -439,11 +439,6 @@ input[type="email"]:active:focus::-webkit-input-placeholder {
 
 /* présentation team carousel */
 #team {
-  /* display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center; */
-  
   font-family: "wild";
   font-size: 50px;
   text-shadow: 5px 5px 5px black;
@@ -453,6 +448,7 @@ input[type="email"]:active:focus::-webkit-input-placeholder {
   margin-bottom: 50px !important;
   margin-left: 0px !important;
 }
+
 
 .carousel-caption {
   color: rgb(134, 202, 67) !important;
