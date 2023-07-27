@@ -61,6 +61,7 @@ input:focus {
     rgb(211, 232, 188) 51%,
     rgba(139, 179, 133, 1) 100%
   );
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .close {
